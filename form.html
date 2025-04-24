@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OB1 Pre-registration</title>
+  <link rel="stylesheet" href="form.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+  <div class="container">
+    <h1>Join the OB1 Circles</h1>
+     <br>
+  <p class="intro-paragraph">
+    This form helps us understand who’s reaching out and how we might build meaningful connections. 
+    You can express interest in one or more <strong>circles</strong>:
+  </p>
+  <p>
+    You can also leave your number if you'd rather speak before getting involved. 
+    We’ll send a message (via SMS or WhatsApp) first to check if it's a good time.
+  </p>
+  <p>
+    You don’t need to answer everything — just what matters to you.
+Your input helps us decide what kind of circle to open.</p>
+  <details>
+    <summary>What is an OB1 circle?</summary>
+    <p>
+      An OB1 Circle is a Sweden-based peer group for people working off-hours who face legal irregularities or uncertain conditions. 
+      There are three types of circles:
+      <ul>
+        <li><strong>Forum Circles</strong> –  A hosted forum on OB1, structured by topic and coming soon.</li>
+        <li><strong>Message Circles</strong> – Planned WhatsApp or Telegram groups for real-time peer exchange.</li>
+        <li><strong>Social Circles</strong> – Facebook groups or similar are considered for broader, informal sharing.</li>
+      </ul>
+      OB1 circles may be mobile-first, desktop-based, or community-managed. They grow only if enough people show interest.
+    </p>
+  </details>
+
+<label for="phone">Would you prefer to be contacted by phone instead of filling out this form?</label>
+<input type="tel" id="phone" name="phone" placeholder="07...">
+
+<label for="whatsapp">Would you be interested in joining a WhatsApp group for support?</label>
+<select id="whatsapp" name="whatsapp">
+  <option value="">Select</option>
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+
+<label for="current-location">Where are you currently based?</label>
+<input type="text" id="current-location" name="current-location" placeholder="City or region (e.g. Malmö)" />
+
+<label for="jobRoles">What is or are your current or past role(s)? </label>
+<input type="text" id="jobRoles" name="jobRoles" placeholder="Dishwasher, Waiter, Cleaner, Kitchen Assistant, Delivery, Warehouse, Lawyer, Legal Advisor, Union Representative, Journalist, Social Worker, HR Officer, Restaurateur, Labour Inspector, Doctoral Student in Law, Employer, Syndicalist, Local official, Observer or Advocate" />
+
+<!-- Topics of interest -->
+<label for="interests">What topics are you most interested in?</label>
+<input type="text" id="interests" name="interests" placeholder="e.g. Contracts, Unpaid wages, Workplace pressure, Legal strategy" />
+
+
+<label for="name">Use your first Name or a pseudonym</label>
+<input type="text" id="name" name="name" placeholder="Ali, Francis, etc.">
+
+<label for="age">How old are you?</label>
+<input type="number" id="age" name="age" placeholder="Age in years" min="16" max="80" required>
+
+
+  <label for="origin">Where are you originally from?</label>
+  <input type="text" id="origin" name="origin" placeholder="Country, region or people (e.g. West Cameroon, Kabylie, Kurdish)" />
+  
+  <label for="passport-nationality">What is the nationality written in your passport?</label>
+  <input type="text" id="passport-nationality" name="passport-nationality" placeholder="e.g. French, Polish, Syrian" />
+
+  <label for="language">Which language are you the most comfortable with?</label>
+  <input type="text" id="language" name="language" placeholder="e.g. English, Swedish, French, Arabic, " />
+
+
+<!-- What brings you here -->
+<div class="form-group">
+  <label for="reason">What brings you here?</label>
+  <textarea id="reason" name="reason" rows="4" placeholder="Unpaid salary, No contract, Trial period abuse, Legal concern, Investigative interest, Academic research, Professional observation, HR issue, Harassment, Discrimination, Tips withheld, Support someone else, Understand worker rights, Observe patterns, Explore collaboration"></textarea>
+</div>
+
+<!-- Year or period -->
+<div class="form-group">
+  <label for="year">Roughly what year did the issue occur and where in Sweden ?</label>
+  <input type="text" id="year" name="year" placeholder="e.g. 2022, Spring 2023">
+</div>
+
+<!-- Type of support -->
+<label for="support">What kind of support are you looking for?</label>
+<input type="text" id="support" name="support" placeholder="e.g. Talking to others, Admin help, Legal input, Document templates" />
+
+<label for="notify-similar">Would you like to be notified when someone shares similar experience in your area ?</label>
+<select id="notify-similar" name="notify-similar" required>
+  <option value="">Select your answer</option>
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+
+<label for="notify-similar">Would it help to connect with others who faced similar patterns?</label>
+<select id="notify-similar" name="notify-similar" required>
+  <option value="">Select your answer</option>
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+<!-- How did you hear about us -->
+<label for="referral">Do you remember how did you hear about us?</label>
+<input type="text" id="referral" name="referral" placeholder="e.g. Friend, Social media, Website, etc." />
+
+<!-- Email -->
+<div class="form-group">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="your@email.com">
+</div>
+
+<button type="submit">Submit</button>
+</form>
+
+<p style="font-size: 0.8rem; color: #888; margin-top: 2rem;">
+  OB1 Circles are participative and experimental spaces. Information shared in this form is treated with care and used only to explore community needs. No <a href="http://localhost:3000/legal.html">legal</a> service is provided through this form. Responses are not binding and do not constitute formal representation or advice.
+</p>
+
+  </div>
+</body>
+</html>

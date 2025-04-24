@@ -1,0 +1,124 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f9f9f9;
+  font-size: 15px;
+  color: #495057;
+  line-height: 1.6;
+}
+
+/* === TITRE PRINCIPAL === */
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #495057;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+
+.intro {
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+label {
+  display: block;
+  margin-top: 1.2rem;
+  font-weight: 300;
+}
+
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #1c7ed6;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1864ab;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+
+::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color: #888888;
+  font-size: 14px;
+  opacity: 1; /* important pour Firefox */
+}
+
+/* CHAMP DE FORMULAIRE : un style sobre, lisible, sans bordure brutale */
+
+
+input, textarea, select {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 16px;
+  transition: border 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #555;
+  background-color: #fff;
+}
+
+/* PLACEHOLDER UNIFIÉ */
+::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color: #999;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* CASES À COCHER : ton sobre */
+input[type="checkbox"] {
+  accent-color: #726ea9;
+  transform: scale(1.1);
+  margin-right: 6px;
+}
+
+/* CHECKBOXES en grille compacte */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.5rem 1rem;  /* espacement vertical / horizontal */
+  margin-top: 0.5rem;
+}
+
+.checkbox-grid label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
