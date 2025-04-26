@@ -8,7 +8,7 @@ npm run prepare-commit
 
 # Vérification des fichiers critiques
 echo ""
-echo "🔍 Checking critical files (index.html and update-templates.html)..."
+echo "🔍 Checking critical files (index.html and update.html)..."
 
 # Vérifier l'état des fichiers critiques
 CRITICAL_CHANGED=false
