@@ -43,8 +43,8 @@ h1 {
   margin: 0 0 1rem;
 }
 
-h2 { font-size: 24px; margin: 1.5rem 0 .75rem; }
-h3 { font-size: 18px; margin: 1.25rem 0 .5rem; }
+h2 { font-size: 18px; margin: -10px; }
+h3 { font-size: 14px; margin: 1.25rem 0 .5rem; }
 
 /* === LIENS === */
 a { color: #495057; text-decoration: none; }
@@ -117,8 +117,42 @@ ol li::before {
 .mb-0 { margin-bottom: 0 !important; }
 
 .page-timestamp {
-  font-size: 0.75rem;
-  color: #888;
-  text-align: right;
-  padding: 0.5rem;
+  display: block;
+  margin: 0.5rem 0 2rem; /* 0.5rem sous le h1, 2rem avant le contenu suivant */
+  font-size: 12px;
+  color:#999;
+  text-align: center;      /* si vous voulez aligner à droite sous le titre */
+}
+/* === SITE FOOTER === */
+.site-footer {
+  /* espace au-dessus */
+  margin-top: 3rem;
+  /* petits paddings horizontal et vertical */
+  padding: 1rem 2rem;
+  /* si vous voulez que le bloc ne soit pas trop large, décommentez les lignes suivantes :
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  */
+}
+
+.site-footer p {
+  /* plus lisible, aligné à gauche */
+  text-align: left;
+  /* on enlève le margin par défaut du p */
+  margin: 0;
+  /* on pousse un peu vers la droite pour éviter que ça colle au bord */
+  padding-left: 1rem;
+  /* taille et couleur comme vous l’aviez */
+  font-size: 12px;
+  color: #999;
+  line-height: 1.4;
+}
+
+.timestamp {
+    display: block;
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #666;
 }

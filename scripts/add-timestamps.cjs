@@ -1,73 +1,64 @@
-#!/usr/bin/env node
-// scripts/add-timestamps.js
-// CommonJS version: injecte un timestamp 'Updated:' en bas à droite pour chaque page HTML modifiée.
+// add-timestamps.cjs
+// Ce script insère ou met à jour automatiquement un timestamp dans un fichier index.html
+// Seulement si le fichier a été modifié récemment.
 
-const fs = require("fs").promises;
+// Importation des modules Node.js nécessaires
+const fs = require("fs");
 const path = require("path");
-const cheerio = require("cheerio");
-const { execSync } = require("child_process");
 
-async function injectTimestamp(file) {
-  console.log(`🔄 Processing ${file}...`);
-  const html = await fs.readFile(file, "utf-8");
-  const $ = cheerio.load(html);
+// Définir le chemin du fichier à modifier
+const filePath = path.join(__dirname, "..", "index.html");
 
-  // 1. Supprime l'ancien timestamp
-  $(".page-timestamp").remove();
+// Lire les métadonnées du fichier pour obtenir la date de dernière modification
+const stats = fs.statSync(filePath);
+const lastModified = stats.mtime;
 
-  // 2. Formate la date en anglais (UK)
-  const now = new Date().toLocaleString("en-GB", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-    hour12: false,
-  });
+// Lire le contenu actuel du fichier
+let content = fs.readFileSync(filePath, "utf8");
 
-  // 3. Crée le paragraphe
-  const stamp = `<p class="page-timestamp">Updated: ${now}</p>`;
+// Définir où on veut insérer ou mettre à jour le timestamp
+const timestampMarker = "<!-- TIMESTAMP -->";
 
-  // 4. Injecte avant </body>
-  $("body").append(stamp);
+// Créer un nouveau timestamp lisible
+const now = new Date();
+const timestampText = `<small>Last updated: ${now.toLocaleString("en-GB", {
+  dateStyle: "full",
+  timeStyle: "short",
+})}</small class="timestamp">`;
 
-  // 5. Écrit le fichier
-  await fs.writeFile(file, $.html(), "utf-8");
-  console.log(`✅ Timestamp injected into ${file}`);
-}
-
-(async () => {
-  try {
-    // 1. Récupère les fichiers HTML modifiés dans le dernier commit
-    const changed = execSync('git diff --name-only HEAD~1 HEAD -- "*.html"', {
-      encoding: "utf8",
-    })
-      .trim()
-      .split(/\r?\n/)
-      .filter(Boolean);
-
-    if (changed.length === 0) {
-      console.log("⏩ No HTML files changed in last commit.");
+// Fonction principale : met à jour ou insère le timestamp
+function updateTimestamp() {
+  // Vérifier si le fichier contient déjà le marqueur
+  if (content.includes(timestampMarker)) {
+    console.log("Marqueur TIMESTAMP trouvé, mise à jour du timestamp...");
+    content = content.replace(timestampMarker, timestampText);
+  } else {
+    console.log(
+      "Aucun marqueur trouvé. Insertion du timestamp après le premier <h1>..."
+    );
+    // Si aucun marqueur, tenter d'injecter après la première balise <h1>
+    const h1EndIndex = content.indexOf("</h1>");
+    if (h1EndIndex !== -1) {
+      content =
+        content.slice(0, h1EndIndex + 5) +
+        "\n" +
+        timestampText +
+        content.slice(h1EndIndex + 5);
+    } else {
+      console.log(
+        "Erreur : aucun <h1> trouvé, impossible d'insérer le timestamp proprement."
+      );
       return;
     }
-
-    // 2. Injecte les timestamps
-    for (const file of changed) {
-      if (
-        await fs
-          .stat(file)
-          .then((s) => s.isFile())
-          .catch(() => false)
-      ) {
-        await injectTimestamp(file);
-      }
-    }
-
-    console.log(`\n🎉 Done. Stamped ${changed.length} file(s).`);
-  } catch (err) {
-    console.error("❌ Error:", err.message);
-    process.exit(1);
   }
-})();
+
+  // Réécriture du fichier mis à jour
+  fs.writeFileSync(filePath, content, "utf8");
+  console.log(
+    "✅ Fichier mis à jour avec succès à",
+    now.toLocaleString("en-GB", { dateStyle: "full", timeStyle: "short" })
+  );
+}
+
+// Comparaison : ici pour l’instant on décide d’actualiser à chaque exécution si besoin
+updateTimestamp();

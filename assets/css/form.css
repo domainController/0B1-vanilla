@@ -62,7 +62,7 @@ button:hover {
 
 
 ::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Source Sans Pro', system-ui, sans-serif;
   font-weight: 300;
   color: #888888;
   font-size: 14px;
@@ -91,7 +91,7 @@ input:focus, textarea:focus, select:focus {
 
 /* PLACEHOLDER UNIFIÉ */
 ::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Source Sans Pro', system-ui, sans-serif;
   font-weight: 300;
   color: #999;
   font-size: 14px;
