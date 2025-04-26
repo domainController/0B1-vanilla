@@ -3,10 +3,8 @@
 
 echo "🔄 Running update scripts before pushing..."
 
-# Exécuter les mises à jour automatiquement
 npm run prepare-commit
 
-# Vérification des fichiers critiques
 echo ""
 echo "🔍 Checking critical files (index.html and update.html)..."
 
