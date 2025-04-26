@@ -156,3 +156,7 @@ ol li::before {
     font-size: 0.9em;
     color: #666;
 }
+
+.centered {
+  text-align: center;
+}
