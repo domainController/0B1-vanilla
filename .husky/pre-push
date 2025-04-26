@@ -10,7 +10,6 @@ npm run prepare-commit
 echo ""
 echo "🔍 Checking critical files (index.html and update.html)..."
 
-# Vérifier l'état des fichiers critiques
 CRITICAL_CHANGED=false
 
 for file in "index.html" "update.html"; do
@@ -22,7 +21,6 @@ for file in "index.html" "update.html"; do
   fi
 done
 
-# Petit bilan final
 echo ""
 if [ "$CRITICAL_CHANGED" = true ]; then
   echo "✅ Critical updates detected. Proceeding with push."
