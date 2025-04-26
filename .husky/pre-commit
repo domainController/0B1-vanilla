@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔄 Preparing update (timestamps, home updates, full updates)..."
+npm run prepare-commit
+echo "✅ Updates complete. Proceeding with commit."

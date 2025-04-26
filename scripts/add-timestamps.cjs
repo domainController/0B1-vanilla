@@ -1,64 +1,59 @@
 // add-timestamps.cjs
-// Ce script insère ou met à jour automatiquement un timestamp dans un fichier index.html
-// Seulement si le fichier a été modifié récemment.
+// Script pour insérer ou mettre à jour proprement un timestamp dans index.html
+// Version corrigée avec remplacement intelligent.
 
-// Importation des modules Node.js nécessaires
+// Importer les modules nécessaires
 const fs = require("fs");
 const path = require("path");
 
-// Définir le chemin du fichier à modifier
+// Définir le chemin du fichier cible
 const filePath = path.join(__dirname, "..", "index.html");
-
-// Lire les métadonnées du fichier pour obtenir la date de dernière modification
-const stats = fs.statSync(filePath);
-const lastModified = stats.mtime;
 
 // Lire le contenu actuel du fichier
 let content = fs.readFileSync(filePath, "utf8");
 
-// Définir où on veut insérer ou mettre à jour le timestamp
-const timestampMarker = "<!-- TIMESTAMP -->";
-
-// Créer un nouveau timestamp lisible
+// Générer le timestamp actuel
 const now = new Date();
-const timestampText = `<small>Last updated: ${now.toLocaleString("en-GB", {
-  dateStyle: "full",
-  timeStyle: "short",
-})}</small class="timestamp">`;
+const timestampText = `<small class="timestamp" style="display: block; text-align: center;">Last updated: ${now.toLocaleString(
+  "en-GB",
+  { dateStyle: "full", timeStyle: "short" }
+)}</small>`;
 
-// Fonction principale : met à jour ou insère le timestamp
-function updateTimestamp() {
-  // Vérifier si le fichier contient déjà le marqueur
-  if (content.includes(timestampMarker)) {
-    console.log("Marqueur TIMESTAMP trouvé, mise à jour du timestamp...");
-    content = content.replace(timestampMarker, timestampText);
+// Définir un modèle de recherche d'ancien timestamp
+const timestampRegex =
+  /<small class="timestamp"[^>]*>Last updated: .*?<\/small>/;
+
+// Fonction principale
+function updateOrInsertTimestamp() {
+  if (timestampRegex.test(content)) {
+    // Si un ancien timestamp existe, le remplacer
+    console.log("✅ Ancien timestamp détecté : remplacement en cours...");
+    content = content.replace(timestampRegex, timestampText);
   } else {
-    console.log(
-      "Aucun marqueur trouvé. Insertion du timestamp après le premier <h1>..."
-    );
-    // Si aucun marqueur, tenter d'injecter après la première balise <h1>
+    // Si aucun timestamp existant, chercher la balise <h1> pour insérer après
     const h1EndIndex = content.indexOf("</h1>");
     if (h1EndIndex !== -1) {
+      console.log("✅ Aucun ancien timestamp : insertion après le <h1>...");
       content =
         content.slice(0, h1EndIndex + 5) +
         "\n" +
         timestampText +
         content.slice(h1EndIndex + 5);
     } else {
-      console.log(
-        "Erreur : aucun <h1> trouvé, impossible d'insérer le timestamp proprement."
+      console.error(
+        "❌ Erreur : aucune balise <h1> trouvée pour insérer le timestamp."
       );
       return;
     }
   }
 
-  // Réécriture du fichier mis à jour
+  // Réécrire le fichier avec la mise à jour
   fs.writeFileSync(filePath, content, "utf8");
   console.log(
-    "✅ Fichier mis à jour avec succès à",
+    "✅ Timestamp mis à jour avec succès à",
     now.toLocaleString("en-GB", { dateStyle: "full", timeStyle: "short" })
   );
 }
 
-// Comparaison : ici pour l’instant on décide d’actualiser à chaque exécution si besoin
-updateTimestamp();
+// Exécuter la fonction principale
+updateOrInsertTimestamp();
