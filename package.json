@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "BROWSER=firefox vite",
-    "add-timestamps": "node ./scripts/add-timestamps.cjs",
+    "add-timestamps": "node ./scripts/add-timestamps.mjs",
     "generate-home-updates": "node ./scripts/generate-home-updates.mjs",
     "generate-updates": "node ./scripts/generate-updates.mjs",
     "prepare-commit": "npm run add-timestamps && npm run generate-home-updates && npm run generate-updates"
