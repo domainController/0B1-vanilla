@@ -2,9 +2,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OB1 Pre-registration</title>
-  <link rel="stylesheet" href="/assets/css/form.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <!-- Matomo -->
+  <style>
+    .flou {
+      filter: blur(5px);
+    }
+  </style>
+<!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -24,8 +29,18 @@
 <!-- End Matomo Code -->
 </head>
 <body>
+  <header>
+    <div class="navbar">
+      <a class="navbar-item navbar-logo-text" href="/">OB1</a>
+      <a class="navbar-item" href="/forum">Forum</a>
+      <a class="navbar-item" href="/about.html">Manifesto</a>
+      <a class="navbar-item" href="/updates.html">Activity Log</a>
+      <a class="navbar-item" href="/form">Sign Up</a>
+      <a class="navbar-item current-navbar-item" href="/legal">Legal</a>
+    </div>
+  </header>
   <div class="container">
-    <h1>Join the OB1 Circles</h1><p class="page-timestamp">Updated: Friday, 25 April 2025 at 23:19:13</p>
+    <h1>Join the OB1 Circles</h1><p class="page-timestamp">Updated: Saturday, 26 April 2025 at 14:40:18</p>
      <br>
   <p class="intro-paragraph">
     This form helps us understand who’s reaching out and how we might build meaningful connections. 
@@ -51,7 +66,7 @@ Your input helps us decide what kind of circle to open.</p>
       OB1 circles may be mobile-first, desktop-based, or community-managed. They grow only if enough people show interest.
     <p></p>
   </details>
-
+  <div class="flou">
 <label for="phone">Would you prefer to be contacted by phone instead of filling out this form?</label>
 <input type="tel" id="phone" name="phone" placeholder="07...">
 
@@ -131,18 +146,18 @@ Your input helps us decide what kind of circle to open.</p>
 
 <button type="submit">Submit</button>
 
-<footer class="site-footer">
-  <p>
-    © 2025 OB1. All rights reserved.<br>
-    Content provided “as is” without warranties.<br>
-    Terms governed by Swedish law – Malmö courts have exclusive jurisdiction.
-  </p>
-</footer>
+</div>
 <p style="font-size: 0.8rem; color: #888; margin-top: 2rem;">
   OB1 Circles are participative and experimental spaces. Information shared in this form is treated with care and used only to explore community needs. No <a href="http://localhost:3000/legal.html">legal</a> service is provided through this form. Responses are not binding and do not constitute formal representation or advice.
 </p>
 
   </div>
 
-
+  <footer class="site-footer">
+    <p>
+      © 2025 OB1. All rights reserved.<br>
+      Content provided “as is” without warranties.<br>
+      Terms governed by Swedish law – Malmö courts have exclusive jurisdiction.
+    </p>
+  </footer>
 </body></html>
