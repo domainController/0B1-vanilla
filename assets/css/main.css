@@ -162,11 +162,10 @@ ol li::before {
 }
 
 a {
-  color: #228be6; 
+  color: #22b8e6;
   text-decoration: none;
 }
 
 a:hover {
-  color:#228be6; 
-  ;
+  text-decoration: underline;
 }

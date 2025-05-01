@@ -8,6 +8,15 @@ import simpleGit from "simple-git";
 const git = simpleGit();
 const INDEX_PATH = path.resolve("index.html");
 
+function escapeHtml(text) {
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 // Icon picker based on commit message
 function pickIcon(message) {
   const msg = message.toLowerCase();
@@ -89,7 +98,7 @@ async function main() {
     if (!g.entries.length) continue;
     snippet += `<h2>${g.entries[0].icon} ${g.day}</h2>\n<ul>\n`;
     for (const e of g.entries) {
-      snippet += `  <li>${e.icon} ${e.time} – ${e.message}</li>\n`;
+      snippet += `  <li>${e.icon} ${e.time} – ${escapeHtml(e.message)}</li>\n`;
     }
     snippet += "</ul>\n";
   }
