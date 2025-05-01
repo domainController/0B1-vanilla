@@ -1,3 +1,14 @@
+
+function sanitize(str) {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+
 // scripts/generate-updates.mjs
 // ES module script to generate updates.html with grouped daily commits
 import { promises as fs } from "fs";
