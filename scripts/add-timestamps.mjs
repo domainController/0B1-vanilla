@@ -30,6 +30,17 @@ const getLastCommitDate = async () => {
   return new Date(log.latest.date);
 };
 
+const formatDateFR = (date) => {
+  const formatter = new Intl.DateTimeFormat("fr-FR", {
+    hour12: false,
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+  const time = formatter.format(date).replace(":", "h");
+  const seconds = String(date.getSeconds()).padStart(2, "0");
+  return `${time} ${seconds}`;
+};
+
 const updateTimestamps = async () => {
   if (filesToUpdate.length === 0) {
     console.log("ℹ️ No files listed for timestamp update.");
@@ -39,18 +50,9 @@ const updateTimestamps = async () => {
   console.log("🛠 Starting manual timestamp update...");
 
   const lastCommitDate = await getLastCommitDate();
+  const formattedTime = formatDateFR(lastCommitDate);
 
-  const options = {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-  };
-  const formattedDate = lastCommitDate.toLocaleString("en-US", options);
-
-  const timestampHTML = `<small class="timestamp" style="display: block; text-align: center;">Last updated: ${formattedDate}</small>\n`;
+  const timestampHTML = `<small class="timestamp" style="display: block; text-align: center;">Dernière mise à jour : ${formattedTime}</small>\n`;
 
   for (const file of filesToUpdate) {
     const filePath = path.resolve(__dirname, "../", file);
