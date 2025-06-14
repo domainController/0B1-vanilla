@@ -1,28 +1,20 @@
 {
-  "name": "ob1vanilla",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "BROWSER=firefox vite",
-    "add-timestamps": "node ./scripts/add-timestamps.mjs",
-    "generate-home-updates": "node ./scripts/generate-home-updates.mjs",
-    "generate-updates": "node ./scripts/generate-updates.mjs",
-    "prepare-commit": "npm run add-timestamps && npm run generate-home-updates && npm run generate-updates"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "cheerio": "^1.0.0",
-    "glob": "^11.0.2",
-    "vite": "^6.3.3"
+    "husky": "^8.0.0",
+    "vite-plugin-purgecss": "^0.2.13"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prepare": "husky install",
+    "generate-home-updates": "node scripts/generate-home-updates.mjs",
+    "prepare-commit": "npm run generate-home-updates && npm run generate-updates",
+    "generate-updates": "node scripts/generate-updates.mjs",
+    "update-site": "node scripts/generate-home-updates.mjs && node scripts/generate-updates.mjs"
   },
   "dependencies": {
-    "gitl": "^1.0.0",
-    "simple": "^0.2.0",
     "simple-git": "^3.27.0"
   }
 }

@@ -8,22 +8,26 @@ import simpleGit from "simple-git";
 const git = simpleGit();
 const INDEX_PATH = path.resolve("index.html");
 
-function escapeHtml(text) {
-  return text
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-}
-
 // Icon picker based on commit message
 function pickIcon(message) {
   const msg = message.toLowerCase();
-  if (msg.includes("legal")) return "\u2696\ufe0f"; // ⚖️ = ⚖️
-  if (msg.startsWith("feat")) return "\u2705"; // ✅
-  if (msg.startsWith("fix") || msg.startsWith("chore")) return "\ud83d\udd27"; // 🔧
-  return "\ud83d\udd04"; // 🔄
+  if (msg.includes("legal")) return "⚖️";
+  if (msg.includes("content")) return "✍️";
+  if (msg.includes("style") || msg.includes("css")) return "🎨";
+  if (msg.includes("structure") || msg.includes("refactor")) return "🗂️";
+  if (msg.includes("timeline") || msg.includes("log")) return "🕰️";
+  if (msg.includes("docs")) return "📄";
+  if (msg.includes("ux") || msg.includes("design")) return "🎯";
+  if (msg.includes("form") || msg.includes("input")) return "📝";
+  if (msg.includes("contact")) return "📬";
+  if (msg.includes("search")) return "🔎";
+  if (msg.includes("simulator")) return "🧮";
+  if (msg.includes("navlink") || msg.includes("nav")) return "🧭";
+  if (msg.includes("placeholder")) return "🚧";
+  if (msg.includes("glossary")) return "📘";
+  if (msg.includes("feat")) return "✅";
+  if (msg.includes("fix") || msg.includes("chore")) return "🛠️";
+  return "📌"; // fallback
 }
 
 // Format Date to 'Friday 25 April 2025' (no comma)
@@ -94,11 +98,11 @@ async function main() {
 
   // Build snippet with maximum 2 days
   let snippet = '<div class="legal-container">\n';
-  for (const g of groups.slice(0, 2)) {
+  for (const g of groups.slice(0, 1)) {
     if (!g.entries.length) continue;
     snippet += `<h2>${g.entries[0].icon} ${g.day}</h2>\n<ul>\n`;
     for (const e of g.entries) {
-      snippet += `  <li>${e.icon} ${e.time} – ${escapeHtml(e.message)}</li>\n`;
+      snippet += `  <li>${e.icon} ${e.time} – ${e.message}</li>\n`;
     }
     snippet += "</ul>\n";
   }

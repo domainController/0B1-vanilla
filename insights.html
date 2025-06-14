@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>What's New</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Matomo -->
+    <!-- End Matomo Code -->
+  </head>
+  <body>
+    <header>
+      <button id="toggleNavbar" class="toggle-btn">☰</button>
+      <div class="navbar">
+        <a href="/">Home</a>
+        <!-- Bloc 1 -->
+        <div class="nav-section">Public Brief</div>
+        <a href="/comparison.html">Strategic View</a>
+        <a href="/leverage.html">Bank Proxy</a>
+        <a href="/buyout.html"> Ownership Risk</a>
+        <a href="/spinoffs.html">Spin-Offs</a>
+        <a href="/audit.html"> Audit Records</a>
+        <a href="/annexes.html">Licence & Docs</a>
+
+        <!-- Bloc 2 -->
+        <div class="nav-section">Operational Frictions</div>
+        <a href="/fallout.html">Legal Fallout</a>
+        <a href="/proxies.html">Proxy Shields</a>
+        <a href="/staffing.html">Staff Gaps</a>
+        <a href="/critique.html">Restaurant Theory</a>
+
+        <a href="/keys.html">Dual System</a>
+
+        <!-- Bloc 4 -->
+        <div class="nav-section">Ownership Track</div>
+        <a href="/exit.html">Exit Strategies</a>
+
+        <a href="/restructuring.html">Operations Suggestions</a>
+        <a href="/holding.html">Legal Holdings</a>
+        <a href="/standpoint.html">Founder Standpoint</a>
+      </div>
+    </header>
+    <main class="main-content">
+      <section>
+        <h1>🧾 Revenue Attribution Analysis</h1>
+        <h2>
+          📊 Revenue Correlation – Partnership Income Traced to Elite Rosen
+          Malmö AB
+        </h2>
+
+        <p>
+          Between <strong>2022 and 2023</strong>, Elite Rosen Malmö AB
+          consistently reported
+          <mark style="background-color: #e0e0e0"
+            >3.7M SEK in “Other operating income”</mark
+          >
+          (<em>Övriga rörelseintäkter</em>). During this exact period,
+          <strong>HSSC Event AB’s profits surged from 2.2M to 5.3M SEK</strong>,
+          marking their most profitable cycle.
+        </p>
+
+        <p>
+          The timing and stability of these entries raise the likelihood that
+          these
+          <strong>3.7M SEK</strong> represent
+          <u>fixed fees linked to the restaurant partnership</u> — potentially
+          structured as a blend of <em>base rent and service commissions</em>.
+          In conventional hotel-restaurant arrangements, such income is
+          classified under
+          <a href="#" class="note-link">Other Operating Income</a> rather than
+          direct rent, especially when tied to
+          <strong>performance-based agreements or profit sharing clauses</strong
+          >.
+        </p>
+
+        <p>
+          The repeated value across both years suggests a
+          <strong>fixed contractual structure</strong> rather than variable
+          revenue participation. This supports the interpretation of a
+          <mark style="background-color: #e0e0e0"
+            >guaranteed stream of 3.7M SEK annually</mark
+          >, likely covering both commercial access and hospitality brand use.
+        </p>
+
+        <p>
+          Such a configuration would ensure
+          <strong>Elite’s passive return on assets</strong> without direct
+          involvement in food & beverage operations, while granting HSSC Event
+          AB
+          <strong>full operational freedom and revenue retention</strong> beyond
+          the fixed payout.
+        </p>
+
+        <p>
+          This financial logic aligns perfectly with the dual structure
+          described in
+          <a href="/holding.html" class="subtle-link">Holding Strategy</a>,
+          where ownership is split between operating and holding entities to
+          facilitate <strong>cash flow extraction</strong> and
+          <strong>risk insulation</strong>.
+        </p>
+      </section>
+    </main>
+    <script>
+      const toggleBtn = document.getElementById("toggleNavbar");
+      const navbar = document.querySelector(".navbar");
+
+      toggleBtn?.addEventListener("click", () => {
+        // 1) on inverse 'collapsed' sur la sidebar
+        const isNowCollapsed = navbar.classList.toggle("collapsed");
+        // 2) on pose 'nav-open' **UNIQUEMENT si** la sidebar est DÉPLIÉE
+        //    (c’est-à-dire `collapsed === false`)
+        document.body.classList.toggle("nav-open", !isNowCollapsed);
+      });
+
+      // Script pour injecter le footer (inchangé)
+      fetch("/components/footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          const footerContainer = document.createElement("div");
+          footerContainer.innerHTML = html;
+          document.body.appendChild(footerContainer);
+        });
+    </script>
+  </body>
+</html>
