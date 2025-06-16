@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>What's New</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Matomo -->
+    <!-- End Matomo Code -->
+  </head>
+  <body>
+    <header>
+      <button id="toggleNavbar" class="toggle-btn">☰</button>
+      <div class="navbar">
+        <a href="/">Home</a>
+        <!-- Bloc 1 -->
+        <div class="nav-section">Public Brief</div>
+        <a href="/comparison.html">Strategic View</a>
+        <a href="/leverage.html">Bank Proxy</a>
+        <a href="/buyout.html"> Ownership Risk</a>
+        <a href="/spinoffs.html">Spin-Offs</a>
+        <a href="/audit.html"> Audit Records</a>
+        <a href="/annexes.html">Licence & Docs</a>
+
+        <!-- Bloc 2 -->
+        <div class="nav-section">Operational Frictions</div>
+        <a href="/fallout.html">Legal Fallout</a>
+        <a href="/proxies.html">Proxy Shields</a>
+        <a href="/staffing.html">Staff Gaps</a>
+        <a href="/critique.html">Restaurant Theory</a>
+
+        <a href="/keys.html">Dual System</a>
+
+        <!-- Bloc 4 -->
+        <div class="nav-section">Ownership Track</div>
+        <a href="/standpoint.html">Founder Standpoint</a>
+
+        <a href="/exit.html">Exit Strategies</a>
+
+        <a href="/restructuring.html">Operations Suggestions</a>
+        <a href="/holding.html">Legal Holdings</a>
+        <a href="/shelf.html">Shelf Strategy</a>
+        <!-- ⚠️ PRE-NDA SECTION — DO NOT DISPLAY OR LINK PUBLICLY -->
+        <div class="nav-section">Pressure Addendum</div>
+        <a href="/simulator.html">Simulator</a>
+        <!-- ⚠️ POST-NDA SECTION — DO NOT DISPLAY OR LINK PUBLICLY -->
+        <div class="nav-section">Post-NDA Addendum</div>
+        <a href="/insights.html">Partnership Revenue</a>
+        <div class="nav-section">Strategic Add-Ons</div>
+        <a href="/integration.html">Integration Trends</a>
+      </div>
+    </header>
+  <main class="main-content">
+    <h1>🧨 Controlled Escalation Strategy</h1>
+    
+    <section>
+      <h2>🧠 Rationale</h2>
+      <p>
+        This simulator concept is not a threat — it's an <strong>escalation buffer</strong>. Its mere existence demonstrates strategic depth and capability to amplify visibility if negotiations fail.
+      </p>
+    </section>
+
+    <section>
+      <h2>🔧 The OB1 / OB2 Simulator</h2>
+      <p>
+        A user-friendly tool to help workers estimate their Swedish unemployment compensation, based on <strong>“OB1” and “OB2” payment structures</strong>. This responds to a real market gap — <em>many employees do not know what they’re entitled to</em>.
+      </p>
+      <ul>
+        <li>⚙️ Built in plain HTML, with light JS</li>
+        <li>📈 Designed to be SEO-optimized for long-tail queries like “beräkna OB-tillägg helg”</li>
+        <li>🧲 Can attract <mark style="background-color: #e0e0e0">5,000+ visits/month</mark> with proper exposure</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🌐 Domain Prepared: <code>obtillagg.se</code></h2>
+      <p>
+        This domain has already been secured. Its registration is verifiable via public WHOIS records. It can be pointed to a simulator instantly if necessary.
+      </p>
+      <blockquote>
+        <strong>Registrar:</strong> Loopia / Whois.se<br />
+        <strong>Holder:</strong> [Name redacted]<br />
+        <strong>Created:</strong> [timestamp]<br />
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>📉 Controlled Pressure Timeline</h2>
+      <ul>
+        <li>🕐 <strong>Step 1:</strong> The project stays silent — simulator not launched</li>
+        <li>🕑 <strong>Step 2:</strong> Quiet test on subdomain (e.g. beta.obtillagg.se)</li>
+        <li>🕒 <strong>Step 3:</strong> If required, publication with social sharing & SEO push</li>
+        <li>🕓 <strong>Step 4:</strong> Partnership requests from unions / job boards</li>
+      </ul>
+      <p><em>This gives multiple offramps before reputational impact.</em></p>
+    </section>
+
+    <section>
+      <h2>🎯 Why It Matters</h2>
+      <p>
+        The simulator proves two things:
+        <ol>
+          <li>🧠 <strong>Technical competence</strong> — mastering frontend development, indexing logic, and information architecture.</li>
+          <li>🧠 <strong>Negotiation intelligence</strong> — a readiness to create audience-based leverage, not drama.</li>
+        </ol>
+      </p>
+    </section>
+  </main>
+    <script>
+      const toggleBtn = document.getElementById("toggleNavbar");
+      const navbar = document.querySelector(".navbar");
+
+      toggleBtn?.addEventListener("click", () => {
+        // 1) on inverse 'collapsed' sur la sidebar
+        const isNowCollapsed = navbar.classList.toggle("collapsed");
+        // 2) on pose 'nav-open' **UNIQUEMENT si** la sidebar est DÉPLIÉE
+        //    (c’est-à-dire `collapsed === false`)
+        document.body.classList.toggle("nav-open", !isNowCollapsed);
+      });
+
+      // Script pour injecter le footer (inchangé)
+      fetch("/components/footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          const footerContainer = document.createElement("div");
+          footerContainer.innerHTML = html;
+          document.body.appendChild(footerContainer);
+        });
+    </script>
+  </body>
+</html>
