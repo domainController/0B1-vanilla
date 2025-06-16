@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>What's New</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Matomo -->
+    <!-- End Matomo Code -->
+  </head>
+  <body>
+    <header>
+      <button id="toggleNavbar" class="toggle-btn">☰</button>
+      <div class="navbar">
+        <a href="/">Home</a>
+        <!-- Bloc 1 -->
+        <div class="nav-section">Public Brief</div>
+        <a href="/comparison.html">Strategic View</a>
+        <a href="/leverage.html">Bank Proxy</a>
+        <a href="/buyout.html"> Ownership Risk</a>
+        <a href="/spinoffs.html">Spin-Offs</a>
+        <a href="/audit.html"> Audit Records</a>
+        <a href="/annexes.html">Licence & Docs</a>
+
+        <!-- Bloc 2 -->
+        <div class="nav-section">Operational Frictions</div>
+        <a href="/fallout.html">Legal Fallout</a>
+        <a href="/proxies.html">Proxy Shields</a>
+        <a href="/staffing.html">Staff Gaps</a>
+        <a href="/critique.html">Restaurant Theory</a>
+
+        <a href="/keys.html">Dual System</a>
+
+        <!-- Bloc 4 -->
+        <div class="nav-section">Ownership Track</div>
+        <a href="/exit.html">Exit Strategies</a>
+
+        <a href="/restructuring.html">Operations Suggestions</a>
+        <a href="/holding.html">Legal Holdings</a>
+        <a href="/standpoint.html">Founder Standpoint</a>
+      </div>
+    </header>
+    <main class="main-content">
+      <h1>🍽️ Ownership Shifts in F&amp;B (Europe &amp; Nordics)</h1>
+      <p>
+        This section outlines key dynamics observed in recent years as hotel
+        groups across Europe shift from lease-based food operations to
+        equity-controlled or fully integrated models. This shift reflects
+        growing interest in
+        <strong
+          >margin capture, hygiene control, brand alignment, and risk
+          reduction</strong
+        >.
+      </p>
+
+      <section>
+        <h2>📌 Overview – Why Hotels Integrate F&amp;B?</h2>
+        <p>
+          Independent operators are often unable to maintain margin consistency,
+          hygiene standards, or strategic alignment with the host hotel's brand.
+          Integration allows for:
+        </p>
+        <ul>
+          <li>✅ Better control of food safety and labor conditions</li>
+          <li>📈 Direct margin capture (vs lease model with fixed rent)</li>
+          <li>🎯 Alignment between guest experience and F&amp;B identity</li>
+          <li>🔒 Reduced risk of reputation damage via rogue operators</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>📊 Case Studies – 2018–2025</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Group</th>
+              <th>Country</th>
+              <th>Move</th>
+              <th>Year</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Strawberry Hotels</td>
+              <td>Sweden</td>
+              <td>Acquired 30% of F&amp;B operator at Hotel Rival</td>
+              <td>2022</td>
+              <td><a href="#">🔗</a></td>
+            </tr>
+            <tr>
+              <td>Langosteria / LVMH</td>
+              <td>France</td>
+              <td>Full integration via Belmond hotels (luxury segment)</td>
+              <td>2023</td>
+              <td><a href="#">🔗</a></td>
+            </tr>
+            <tr>
+              <td>Scandic</td>
+              <td>Sweden</td>
+              <td>Reclaimed breakfast operations across chain</td>
+              <td>2021</td>
+              <td><a href="#">🔗</a></td>
+            </tr>
+            <tr>
+              <td>Ennismore / 25Hours</td>
+              <td>Pan-EU</td>
+              <td>Created culinary brand synergies (cross-venue)</td>
+              <td>2020–ongoing</td>
+              <td><a href="#">🔗</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>🧠 Lessons from Integration Moves</h2>
+        <ul>
+          <li>🔧 Full control = costlier short term, but safer long term</li>
+          <li>👥 Employee training must scale with integration</li>
+          <li>📢 Guest experience improves with F&amp;B alignment</li>
+          <li>📉 Loss of identity risk when absorbed without care</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>🚀 Tactical Roadmap for Elite</h2>
+        <ol>
+          <li>
+            <strong>Step 1:</strong> Conduct market watch (public filings, brand
+            audits)
+          </li>
+          <li>
+            <strong>Step 2:</strong> Launch 1–2 soft equity pilots (25–40%
+            ownership)
+          </li>
+          <li>
+            <strong>Step 3:</strong> Full integration path (where maturity or
+            risk profile demands)
+          </li>
+        </ol>
+        <p>
+          A 12-month program could be launched internally — or by external
+          mandate — to map 3–4 Elite properties and model an F&amp;B
+          repositioning strategy.
+        </p>
+      </section>
+
+      <section>
+        <h2>🔍 Competitive Visibility</h2>
+        <p>
+          This briefing includes names (Strawberry, Scandic, LVMH) to reinforce
+          industry precedence. It is not intended for public circulation but
+          serves to highlight:
+        </p>
+        <ul>
+          <li>🧭 Missed opportunities if status quo is maintained</li>
+          <li>📈 Peer chains already moving aggressively</li>
+          <li>🔐 Elite has the infrastructure — needs only strategic will</li>
+        </ul>
+      </section>
+    </main>
+    <script>
+      const toggleBtn = document.getElementById("toggleNavbar");
+      const navbar = document.querySelector(".navbar");
+
+      toggleBtn?.addEventListener("click", () => {
+        // 1) on inverse 'collapsed' sur la sidebar
+        const isNowCollapsed = navbar.classList.toggle("collapsed");
+        // 2) on pose 'nav-open' **UNIQUEMENT si** la sidebar est DÉPLIÉE
+        //    (c’est-à-dire `collapsed === false`)
+        document.body.classList.toggle("nav-open", !isNowCollapsed);
+      });
+
+      // Script pour injecter le footer (inchangé)
+      fetch("/components/footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          const footerContainer = document.createElement("div");
+          footerContainer.innerHTML = html;
+          document.body.appendChild(footerContainer);
+        });
+    </script>
+  </body>
+</html>
