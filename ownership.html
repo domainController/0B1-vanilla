@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>What's New</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Matomo -->
+    <!-- End Matomo Code -->
+  </head>
+  <body>
+    <header>
+      <button id="toggleNavbar" class="toggle-btn">☰</button>
+      <div class="navbar">
+        <a href="/">Home</a>
+        <!-- Bloc 1 -->
+        <div class="nav-section">Public Brief</div>
+        <a href="/comparison.html">Strategic View</a>
+        <a href="/leverage.html">Bank Proxy</a>
+        <a href="/buyout.html"> Ownership Risk</a>
+        <a href="/spinoffs.html">Spin-Offs</a>
+        <a href="/audit.html"> Audit Records</a>
+        <a href="/annexes.html">Licence & Docs</a>
+        <div class="nav-section">Strategic Extensions</div>
+        <a href="/trends.html">Integration Trends</a>
+
+        <!-- Bloc 2 -->
+        <div class="nav-section">Operational Frictions</div>
+        <a href="/fallout.html">Legal Fallout</a>
+        <a href="/proxies.html">Proxy Shields</a>
+        <a href="/staffing.html">Staff Gaps</a>
+        <a href="/critique.html">Restaurant Theory</a>
+
+        <a href="/keys.html">Dual System</a>
+
+        <!-- Bloc 4 -->
+        <div class="nav-section">Ownership Track</div>
+        <a href="/forensic.html">Forensic Signals</a>
+        <a href="/consolidation.html">Market Consolidation</a>
+        <a href="/exit.html">Exit Strategies</a>
+        <a href="/restructuring.html">Operations Suggestions</a>
+        <a href="/holding.html">Legal Holdings</a>
+        <a href="/shelf.html">Shelf Strategy</a>
+        <a href="/commitment.html">Work commitment</a>
+
+        <!-- ⚠️ PRE-NDA SECTION — DO NOT DISPLAY OR LINK PUBLICLY -->
+        <div class="nav-section">Pré-NDA Addendum</div>
+        <a href="/simulator.html">Simulator</a>
+        <a href="prejudice.html">Damage Report</a>
+        <!-- ⚠️ POST-NDA SECTION — DO NOT DISPLAY OR LINK PUBLICLY -->
+        <div class="nav-section">Post-NDA Addendum</div>
+        <a href="/insights.html">Partnership Revenue</a>
+        <a href="/integration.html">Investment Thesis </a>
+        <!-- ⚠️ Document d’alignement stratégique — DO NOT DISPLAY OR LINK PUBLICLY -->
+        <div class="nav-section2">↳ Memos</div>
+        <a href="/memo.html">Cultural Continuity </a>
+        <a href="/ownership.html">Owner Scenario </a>
+        <a href="/equity.html">Equity Map </a>
+        <a href="/investor.html">Investor Brief</a>
+      </div>
+    </header>
+    <main class="main-content">
+      <h1>Ownership Scenario</h1>
+
+      <section>
+        <h2>🔁 Transfer Options</h2>
+        <ul>
+          <li>Full buyout (100%) via leveraged acquisition</li>
+          <li>Minority stake transfer (2–10%) with silent board seat</li>
+          <li>Joint Venture creation with conversion clause</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>📌 Governance Questions</h2>
+        <ul>
+          <li>Who appoints operational lead post-deal?</li>
+          <li>Is board representation needed or deferred?</li>
+          <li>What’s the impact on existing holding structure?</li>
+        </ul>
+      </section>
+    </main>
+    <script>
+      const toggleBtn = document.getElementById("toggleNavbar");
+      const navbar = document.querySelector(".navbar");
+
+      toggleBtn?.addEventListener("click", () => {
+        // 1) on inverse 'collapsed' sur la sidebar
+        const isNowCollapsed = navbar.classList.toggle("collapsed");
+        // 2) on pose 'nav-open' **UNIQUEMENT si** la sidebar est DÉPLIÉE
+        //    (c’est-à-dire `collapsed === false`)
+        document.body.classList.toggle("nav-open", !isNowCollapsed);
+      });
+
+      // Script pour injecter le footer (inchangé)
+      fetch("/components/footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          const footerContainer = document.createElement("div");
+          footerContainer.innerHTML = html;
+          document.body.appendChild(footerContainer);
+        });
+    </script>
+  </body>
+</html>
