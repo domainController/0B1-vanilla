@@ -58,8 +58,17 @@ h1 {
 
 }
 
-h2 { font-size: 18px; margin: 1.5rem 0 .75rem; }
-h3 { font-size: 14px; margin: 1.25rem 0 .5rem; }
+/* Garde ceci pour tes H2 “majeurs” */
+h2 {
+  font-size: 18px;
+  margin: 1.5rem 0 .75rem;
+}
+
+/* Passe la seconde règle sur H3 */
+h3 {
+  font-size: 14px;
+  margin: 1.25rem 0 .5rem;
+}
 
 /* === LIENS === */
 a { color: #495057; text-decoration: none; }
@@ -478,6 +487,19 @@ a.internal-link:hover {
   box-sizing: border-box;
 }
 
+.nav-section2 {
+  background-color: #f29ea0;         /* Gris clair uniforme */
+  margin: 0 -1rem;                   /* Annule le padding horizontal de .navbar */
+  padding: 0.2rem 0.6rem;            /* Padding plus étroit */
+  font-size: 0.88rem;                   /* Même taille que .navbar-item */
+  font-weight: 500;              /* PAS en gras */
+  color: #495057;                   /* Même couleur que le texte normal */
+  font-family: inherit;             /* Police identique */
+  width: calc(100% + 2rem);         /* Compense le -1rem gauche et droite */
+  box-sizing: border-box;
+}
+
+
 .narrative-intro {
   background-color: #e5e7eb;
   border-radius: 0.6rem;
@@ -496,3 +518,39 @@ a.internal-link:hover {
   margin-bottom: 0.5rem;
   display: block;
 }
+
+.ai-human {
+  background-color: transparent;     /* Aucun fond */
+  color: #1a1a1a;                    /* Texte noir charbon */
+  border: 1px solid #1a1a1a;         /* Contour sobre */
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* 🟠 2. Mixed Work — Mix humain + AI */
+.ai-hybrid {
+  background-color: #444444;  /* Gris acier foncé */
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+/* 🔵 3. AI Generated — Produit majoritairement avec IA */
+.ai-ai {
+  background-color: #d1d5db;  /* Gris clair uniforme */
+  color: #333;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: 400;
+}
+.nav-separator {
+  border: none;
+  border-top: 1px solid #888;
+  margin: 0.8rem 0;
+}
+
