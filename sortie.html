@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>What's New</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Matomo -->
+    <!-- End Matomo Code -->
+  </head>
+  <body>
+    <header>
+      <button id="toggleNavbar" class="toggle-btn">☰</button>
+      <div class="navbar">
+        <a href="/">Home</a>
+        <!-- Bloc 1 -->
+        <hr class="nav-separator" />
+        <a href="/Playbook Recovery.html" class="ai-human">Playbook Recovery</a>
+        <a href="/comparison.html" class="ai-human">Strategic View</a>
+        <a href="/opacity.html" class="ai-hybrid">Opacity Mechanics</a>
+
+        <a href="/keys.html" class="ai-human">Dual System</a>
+
+        <hr class="nav-separator" />
+        <a href="/spinoffs.html" class="ai-ai">Spin-Offs</a>
+        <a href="/origins.html" class="ai-ai">Archetype Lineage</a>
+        <a href="/trends.html" class="ai-ai">Integration Trends</a>
+
+        <!-- Bloc 2 -->
+
+        <hr class="nav-separator" />
+        <a href="/exit.html" class="ai-hybrid">Exit Strategy</a>
+        <a href="/ardent.html" class="ai-hybrid">Ardent Protocol</a>
+        <a href="/thesis.html" class="ai-hybrid">Investment Thesis </a>
+        <hr class="nav-separator" />
+        <a href="/restructuring.html" class="ai-ai">Operations Suggestions</a>
+
+        <hr class="nav-separator" />
+        <a href="/commitment.html" class="ai-human">Collaboration Proposal</a>
+      </div>
+    </header>
+    <main class="main-content">
+      <main class="main-content">
+        <h1>🚪 Exit Doctrine</h1>
+        <p>
+          <strong>Purpose:</strong> Clarify under which conditions I exit a
+          mandate or shut down a turnaround.
+        </p>
+        <h2>🔓 Exit Triggers</h2>
+        <ul>
+          <li>Repetition loops without executive buy-in</li>
+          <li>Board opacity or sabotage of field-level data</li>
+          <li>Time-to-impact exceeds 3 operational cycles</li>
+        </ul>
+        <h2>🧭 Exit Framing</h2>
+        <p>
+          Each exit is documented, communicated in advance, and never emotional.
+          Exit is an engineered transition, not a resignation.
+        </p>
+      </main>
+    </main>
+    <script>
+      const toggleBtn = document.getElementById("toggleNavbar");
+      const navbar = document.querySelector(".navbar");
+
+      toggleBtn?.addEventListener("click", () => {
+        // 1) on inverse 'collapsed' sur la sidebar
+        const isNowCollapsed = navbar.classList.toggle("collapsed");
+        // 2) on pose 'nav-open' **UNIQUEMENT si** la sidebar est DÉPLIÉE
+        //    (c’est-à-dire `collapsed === false`)
+        document.body.classList.toggle("nav-open", !isNowCollapsed);
+      });
+
+      // Script pour injecter le footer (inchangé)
+      fetch("/components/footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          const footerContainer = document.createElement("div");
+          footerContainer.innerHTML = html;
+          document.body.appendChild(footerContainer);
+        });
+    </script>
+  </body>
+</html>
