@@ -64,11 +64,7 @@ h2 {
   margin: 1.5rem 0 .75rem;
 }
 
-/* Passe la seconde règle sur H3 */
-h3 {
-  font-size: 14px;
-  margin: 1.25rem 0 .5rem;
-}
+
 
 /* === LIENS === */
 a { color: #495057; text-decoration: none; }
@@ -106,7 +102,7 @@ ol li::before {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 160px;
+  width: 183px;
   background-color: #f9f9f9;
   padding: 1rem;
   border-right: 1px solid #e9ecef;
@@ -405,76 +401,105 @@ details.info-box[open] {
 }
 
 
+/* =============================
+   🎯 SIGNALMEMO — EDITORIAL RULES
+   ============================= */
+/* 🟡 subtle-link → lien vers ressource externe, citation, article ou vidéo (non critique) */
+/* 🔵 note-link → définition, note de terminologie, glossaire interne, précisions pointues */
+/* 🟢 chart-link → graphique explicatif, visualisation de tendance ou impact historique */
+/* 🌸 file-link → document officiel (PDF administratif, registre, licence) hébergé localement */
+/* 🟠 internal-link → ancre vers section interne du blog (navigabilité, structure du site) */
+/* 🔴 risk-link → cas critiques, mises en cause ou contenus sensibles / litigieux potentiels */
+/* 🔖 SUBTLE LINKS  → Web classique (articles, vidéos, sources externes publiques) */
 a.subtle-link {
   color: inherit;
-  font-weight: inherit; /* ← empêche le lien d'être en gras */
+  font-weight: inherit; /* ↘ empêche le lien d'être en gras */
   text-decoration: underline dotted;
   text-decoration-thickness: 1px;
-  background-color: #fff9cc; /* jaune doux, très pâle */
+  background-color: #fff9cc; /* 💡 jaune doux : liens web contextuels */
   padding: 0 2px;
   border-radius: 2px;
 }
-
 a.subtle-link:hover {
-  background-color: #fff3a6;
+  background-color: #fff3a6; /* +15% saturation */
 }
 
-
+/* 🧠 NOTE LINKS → Glossaire, concepts internes, définitions, lexique métier */
 a.note-link {
   color: inherit;
-  font-weight: inherit; /* empêche le gras */
+  font-weight: inherit;
   text-decoration: underline dotted;
   text-decoration-thickness: 1px;
-  background-color: #d7e9f8; /* bleu très doux */
+  background-color: #d7e9f8; /* 🔵 bleu pâle */
   padding: 0 2px;
   border-radius: 2px;
 }
-
 a.note-link:hover {
-  background-color: #d3eaff; /* bleu pastel un peu plus visible */
+  background-color: #d3eaff; /* bleu pastel un peu plus vif */
 }
 
-
+/* 📈 CHART LINKS → Données, graphes, visualisations dynamiques */
 a.chart-link {
   color: inherit;
   font-weight: inherit;
   text-decoration: underline dotted;
   text-decoration-thickness: 1px;
-  background-color: #d1f2eb; /* vert menthe doux */
+  background-color: #d1f2eb; /* 🟢 vert menthe clair */
   padding: 0 2px;
   border-radius: 2px;
 }
-
 a.chart-link:hover {
-  background-color: #b9e9df; /* vert un peu plus intense au survol */
+  background-color: #b9e9df; /* vert + saturé */
 }
 
+/* 🗂 FILE LINKS → Documents officiels (PDF, registres, permis, filings) */
 a.file-link {
   color: inherit;
   font-weight: inherit;
   text-decoration: underline dotted;
   text-decoration-thickness: 1px;
-  background-color: #f4c2c2; /* rose pastel doux */
+  background-color: #f4c2c2; /* 🌸 rose pastel = source officielle */
   padding: 0 2px;
   border-radius: 2px;
 }
-
 a.file-link:hover {
-  background-color: #f29ea0; /* rose un peu plus vif au survol */
+  background-color: #f29ea0; /* rose + vif au survol */
 }
+
+/* 🔁 INTERNAL LINKS → Navigation interne (ID, anchors, renvois page) */
 a.internal-link {
   color: inherit;
   font-weight: inherit;
   text-decoration: underline dashed;
   text-decoration-thickness: 1px;
-  background-color: #ffe6cc; /* orange clair doux */
+  background-color: #ffe6cc; /* 🟠 orange clair doux */
   padding: 0 2px;
   border-radius: 2px;
 }
-
 a.internal-link:hover {
-  background-color: #ffcc99;
+  background-color: #ffc999; /* orange + saturé */
 }
+
+/* 🚨 RED-LINK (rare) → Avertissement critique, faille, litige, comportement opaque */
+a.urgent-link {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: underline wavy;
+  background-color: #ffd6d6; /* 🔴 rouge très doux pour ne pas saturer */
+  padding: 0 2px;
+  border-radius: 2px;
+}
+a.urgent-link:hover {
+  background-color: #ffb3b3; /* rouge plus vif au survol */
+}
+
+/* 🛠️ STRUCTURE DE LÉGENDE
+   Chaque classe définit :
+   - une tonalité émotionnelle (confiance / doute / preuve / signal)
+   - un niveau d’importance cognitif (web > interne > fichier > signal)
+   - un rôle d’ancrage mémoriel (scanner / creuser / archiver / valider) */
+
+
 .nav-section {
   background-color: #e5e7eb;         /* Gris clair uniforme */
   margin: 0 -1rem;                   /* Annule le padding horizontal de .navbar */
