@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Private Briefing</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Matomo -->
+    <!-- End Matomo Code -->
+  </head>
+  <body>
+    <header>
+      <button id="toggleNavbar" class="toggle-btn">☰</button>
+      <div class="navbar">
+        <a href="/">Home</a>
+        <!-- Bloc 1 -->
+        <hr class="nav-separator" />
+        <a href="/opacity.html" class="ai-hybrid">Responsibility & Anonymity</a>
+        <a href="/legacy.html" class="ai-human">Partnership Values</a>
+        <a href="/ardent.html" class="ai-hybrid">Ardent Protocol</a>
+        <hr class="nav-separator" />
+
+        <!-- Bloc 2 -->
+        <a href="/dissociated.html" class="ai-human">Dissociated Governance</a>
+        <a href="/risks.html" class="ai-human">Risk Typologies</a>
+        <hr class="nav-separator" />
+        <a href="/commitment.html" class="ai-human">Collaboration Proposal</a>
+        <a href="/contact.html" class="ai-human">Contact Protocol</a>
+      </div>
+    </header>
+    <main class="main-content">
+      <h1>📬 Contact Protocol — 4 Entry Families</h1>
+      <p>
+        <strong
+          >To contact me, choose the track that matches your intent.</strong
+        >
+        I do not respond to ambiguous messages, incomplete identities, or
+        undeclared motives.
+      </p>
+
+      <hr />
+
+      <h2>1. 🔐 Signal-based Contact Protocol</h2>
+
+      <p>
+        This access channel is reserved for individuals carrying weak signals,
+        internal alerts, or whistleblower-level concerns. To initiate contact,
+        you must:
+      </p>
+
+      <ul>
+        <li><strong>Swish 10 SEK</strong> to <strong>0760076374</strong></li>
+        <li>
+          <strong>Send a short intent message</strong> via WhatsApp or e-mail
+          (no LinkedIn)
+        </li>
+        <li>
+          <strong>Include your Swedish personal number</strong> (for
+          traceability)
+        </li>
+        <li>
+          <strong>Attach one verifiable clue or trace</strong> (document, audio,
+          pattern)
+        </li>
+      </ul>
+
+      <p>
+        Initial meeting is one-on-one. We walk, we talk, I listen — and test the
+        signal. If what you share proves substantial or sensitive enough, I may
+        invite my lawyer to join us for a second round. Not for confrontation —
+        but for clarity, structure, and advice. We listen together, then debrief
+        in private.
+      </p>
+      <h3>2. Formal Tracks — Legal, Business, Collaboration</h3>
+      We’ll exchange a few emails to clarify intent. If it’s serious, I show up
+      with my lawyer and put a microphone on the table
+
+      <section>
+        <h2>3. Informal Contact Protocol</h2>
+
+        <p>
+          To initiate informal contact, send a short message via
+          <strong>WhatsApp</strong>, <strong>email</strong>, or
+          <strong>LinkedIn</strong> including:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Your LinkedIn profile</strong> (or equivalent professional
+            ID)
+          </li>
+          <li><strong>Your Swedish personal number</strong></li>
+          <li><strong>Swish 10 SEK</strong> to <strong>0760076374</strong></li>
+        </ul>
+
+        <p>
+          If accepted, we meet for a <strong>45-minute run</strong>. The first
+          <strong>15 minutes at 10 km/h</strong> will focus strictly on
+          <strong>values, short/long-term vision, internal compass</strong>, and
+          your readings of prior materials. Only after that will we discuss why
+          you reached out.
+        </p>
+      </section>
+
+      <p>
+        If validated, I may initiate a secure in-person meeting. This is a
+        high-responsibility channel: false claims, unclear motives or
+        unverifiable data will result in disengagement.
+      </p>
+
+      <p style="margin-top: 2em">
+        <strong
+          >All contact attempts are filtered and archived. Inappropriate
+          messages will be ignored.</strong
+        >
+      </p>
+    </main>
+    <script>
+      // Script pour la sidebar
+      const toggleBtn = document.getElementById("toggleNavbar");
+      const navbar = document.querySelector(".navbar");
+      toggleBtn?.addEventListener("click", () => {
+        navbar.classList.toggle("collapsed");
+      });
+
+      // Script pour injecter le footer
+      fetch("/components/footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          const footerContainer = document.createElement("div");
+          footerContainer.innerHTML = html;
+          document.body.appendChild(footerContainer);
+        });
+      // Script pour bloquer l'accès de la page
+
+      const host = window.location.hostname;
+      const isOnline =
+        !host.includes("localhost") && !host.includes("127.0.0.1");
+
+      if (isOnline) {
+        const pw = prompt("Enter access password:");
+        if (pw !== "monmotdepasse") {
+          document.body.innerHTML = "<h1>Access Denied</h1>";
+        }
+      }
+    </script>
+  </body>
+</html>
