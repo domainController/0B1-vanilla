@@ -1,0 +1,145 @@
+<section>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Self-Audit Culture Note</title>
+      <link rel="stylesheet" href="/assets/css/main.css" />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Matomo -->
+      <!-- End Matomo Code -->
+    </head>
+    <body>
+      <header>
+        <button id="toggleNavbar" class="toggle-btn">☰</button>
+        <div class="navbar">
+          <a href="/">Home</a>
+          <!-- Bloc 1 -->
+          <hr class="nav-separator" />
+          <a href="/opacity.html" class="ai-hybrid"
+            >Responsibility & Anonymity</a
+          >
+          <a href="/legacy.html" class="ai-human">Partnership Values</a>
+          <a href="/ardent.html" class="ai-hybrid">Ardent Protocol</a>
+          <hr class="nav-separator" />
+
+          <!-- Bloc 2 -->
+          <a href="/dissociated.html" class="ai-human"
+            >Dissociated Governance</a
+          >
+          <a href="/risks.html" class="ai-human">Risk Typologies</a>
+          <hr class="nav-separator" />
+          <a href="/violations.html" class="ai-human">Foundational Trigger</a>
+
+          <a href="/commitment.html" class="ai-human">Collaboration Proposal</a>
+          <a href="/contact.html" class="ai-human">Contact Protocol</a>
+        </div>
+      </header>
+      <main class="main-content">
+        <section id="origin-letter" style="margin-top: 3em">
+          <h2>📎 Origin Document — Symbolic Trigger</h2>
+          <p
+            style="background-color: #e0e0e0; padding: 1em; margin-bottom: 1em"
+          >
+            This section contains the original
+            <strong>legal demand letter</strong> sent by the agent — then acting
+            as a dishwasher in a subcontracted unit — followed by the official
+            response received. These two documents together
+            <em>constitute the symbolic ignition point</em> of the
+            <strong>Ripple Effect</strong> and frame the legitimacy of the role.
+          </p>
+          <p>
+            The letter was sent after repeated operational violations, including
+            <strong
+              >non-payment, contractual opacity, and unacknowledged
+              status</strong
+            >
+            within the group. The response received offered a retroactive salary
+            payment equivalent to two weeks, without acknowledging any of the
+            claims.
+          </p>
+          <blockquote
+            style="
+              border-left: 4px solid #888;
+              margin: 1em 0;
+              padding-left: 1em;
+            "
+          >
+            "This document constitutes the point of origin for all strategic
+            developments to follow. It encapsulates the dissonance between
+            field-level suffering and board-level silence."
+          </blockquote>
+          <p>
+            As such, it becomes the first proof of strategic negligence — and
+            <strong>a durable marker of asymmetry</strong>. Its inclusion here
+            is not to reopen conflict, but to trace the architecture of the role
+            back to its ethical root.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1j_yyQmsELeOgqia1I6lGyMHIDclzE4xB/view?usp=sharing"
+                class="file-link"
+                >Original Demand Letter (PDF)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1YUFw5uQpJin4YjZRbFMMdBwF3djMiI5R/view?usp=sharing"
+                class="file-link"
+                >Official Response (PDF)</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section id="note-origin" style="margin-top: 2em">
+          <h2>🗂 Note — Foundational Trigger</h2>
+          <p>
+            The Ripple Effect was not initiated from abstraction — it was born
+            of lived experience and
+            <strong>strategic failure at the periphery</strong>. The triggering
+            moment: a dishwasher, unpaid and unrecognized, legally demanding
+            visibility. The group’s response was minimal, transactional, and
+            systemically blind.
+          </p>
+          <p>
+            From this point emerged a conviction:
+            <em
+              >no operational reform is credible unless it emerges from the
+              overlooked edge.</em
+            >
+          </p>
+          <p>
+            This note marks the
+            <strong>ethical and narrative foundation</strong> of the
+            architecture that follows. It must be understood not as anecdote,
+            but as <strong>precursor structure</strong>.
+          </p>
+        </section>
+      </main>
+      <script>
+        const toggleBtn = document.getElementById("toggleNavbar");
+        const navbar = document.querySelector(".navbar");
+
+        toggleBtn?.addEventListener("click", () => {
+          // 1) on inverse 'collapsed' sur la sidebar
+          const isNowCollapsed = navbar.classList.toggle("collapsed");
+          // 2) on pose 'nav-open' **UNIQUEMENT si** la sidebar est DÉPLIÉE
+          //    (c’est-à-dire `collapsed === false`)
+          document.body.classList.toggle("nav-open", !isNowCollapsed);
+        });
+
+        // Script pour injecter le footer (inchangé)
+        fetch("/components/footer.html")
+          .then((res) => res.text())
+          .then((html) => {
+            const footerContainer = document.createElement("div");
+            footerContainer.innerHTML = html;
+            document.body.appendChild(footerContainer);
+          });
+      </script>
+    </body>
+  </html>
+</section>
