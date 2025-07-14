@@ -411,6 +411,19 @@ details.info-box[open] {
 /* 🟠 internal-link → ancre vers section interne du blog (navigabilité, structure du site) */
 /* 🔴 risk-link → cas critiques, mises en cause ou contenus sensibles / litigieux potentiels */
 /* 🔖 SUBTLE LINKS  → Web classique (articles, vidéos, sources externes publiques) */
+
+a.pilot-link {
+  color: inherit;
+  font-weight: inherit; /* ↘ empêche le lien d'être en gras */
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1px;
+  background-color: #d5d5d5; /* 💡 jaune doux : liens web contextuels */
+  padding: 0 2px;
+  border-radius: 2px;
+}
+a.pilot-link:hover {
+  background-color: #fff3a6; /* +15% saturation */
+}
 a.subtle-link {
   color: inherit;
   font-weight: inherit; /* ↘ empêche le lien d'être en gras */
