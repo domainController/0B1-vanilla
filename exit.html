@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kitchen Culture</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Matomo -->
+    <!-- End Matomo Code -->
+  </head>
+  <body>
+    <header>
+      <button id="toggleNavbar" class="toggle-btn">☰</button>
+      <div class="navbar">
+        <a href="/">Confidential Letter Menu</a>
+        <!-- Bloc 1 -->
+        <hr class="nav-separator" />
+        <a href="/violations.html" class="ai-human">Foundational Trigger</a>
+        <a href="/opacity.html" class="ai-hybrid">Proxy Logic</a>
+        <a href="/dissociated.html" class="ai-human">Dissociated Governance</a>
+        <hr class="nav-separator" />
+
+        <!-- Bloc 2 -->
+        <a href="/commitment.html" class="ai-human">Viability Scan Sheet</a>
+        <a href="/mirror.html" class="ai-human">Ethical Dissemination Sheet</a>
+        <a href="/contact.html" class="ai-human">Contact Protocol</a>
+
+        <!-- Bloc 3 -->
+        <hr class="nav-separator" />
+        <a href="/exit.html" class="ai-human">Exit Intelligence Suite</a>
+        <a href="/letter.html" class="ai-human">Ultimatum Letter</a>
+      </div>
+    </header>
+    <main class="main-content">
+      <section id="exit-suite">
+        <h1>Exit Intelligence Suite</h1>
+
+        <section class="sub-block">
+          <h2>1. Exit Intelligence Suite</h2>
+
+          <h3>ExitHub</h3>
+          <ul>
+            <li>
+              Centralise la gestion narrative et tactique de sortie (Henrik /
+              Saahil).
+            </li>
+            <li>
+              Outil de pilotage pour board : évite panic move, crée un sas.
+            </li>
+            <li>
+              Permet un <strong>exit lisible</strong> sans désaveu public.
+            </li>
+          </ul>
+
+          <h3>Exit Strategy</h3>
+          <ul>
+            <li>
+              Cadre la sortie en trois actes : Diagnostic visible, Tension
+              encadrée, Dignité assurée.
+            </li>
+            <li>
+              Propose un
+              <strong>Partial Buyout + Time-Limited Collaboration</strong> (ex :
+              90–180 jours) comme soft-landing.
+            </li>
+            <li>
+              Nomme les erreurs sans vengeance, tout en protégeant la
+              trajectoire future.
+            </li>
+          </ul>
+        </section>
+
+        <section class="sub-block">
+          <h2>2. Partnership Values (Condensé)</h2>
+          <ul>
+            <li>Capacité à détecter le désalignement sans l’amplifier</li>
+            <li>Refus de la dilution : la vérité reste entière</li>
+            <li>Conception de protocoles au lieu de conflits</li>
+            <li>Respect des figures, mais clarté sur les rôles</li>
+            <li>Capacité à sortir sans contaminer l’écosystème</li>
+          </ul>
+        </section>
+
+        <section class="sub-block">
+          <h2>3. Founder's Design Gaps (à archiver ailleurs)</h2>
+          <ul>
+            <li>Le "repeat pattern" Saahil : opérateur, pas bâtisseur</li>
+            <li>Le malentendu du rôle de fondateur</li>
+            <li>Les signaux de désalignement dans le quotidien</li>
+            <li>
+              Ce qui aurait pu sauver le duo : codification des attentes, rôle
+              miroir, split dès 6 mois
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <script>
+      // open <details> when anchor is targeted
+      function openDetailsFromHash() {
+        const hash = window.location.hash;
+        if (hash) {
+          const details = document.querySelector(hash);
+          if (details && details.tagName.toLowerCase() === "details") {
+            details.setAttribute("open", true);
+            details.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      }
+      window.addEventListener("DOMContentLoaded", openDetailsFromHash);
+      window.addEventListener("hashchange", openDetailsFromHash);
+      // Script pour la sidebar
+      const toggleBtn = document.getElementById("toggleNavbar");
+      const navbar = document.querySelector(".navbar");
+      toggleBtn?.addEventListener("click", () => {
+        navbar.classList.toggle("collapsed");
+      });
+
+      // Script pour injecter le footer
+      fetch("/components/footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          const footerContainer = document.createElement("div");
+          footerContainer.innerHTML = html;
+          document.body.appendChild(footerContainer);
+        });
+    </script>
+  </body>
+</html>
