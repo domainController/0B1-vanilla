@@ -1,0 +1,114 @@
+<section>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Collaboration Note</title>
+      <link rel="stylesheet" href="/assets/css/main.css" />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Matomo -->
+      <!-- End Matomo Code -->
+    </head>
+    <body>
+      <header>
+        <button id="toggleNavbar" class="toggle-btn">☰</button>
+        <div class="navbar">
+          <a href="/" class="ai-hybrid">Letter 0 Menu</a>
+          <!-- Bloc 1 -->
+          <hr class="nav-separator" />
+          <a href="./frameworks.html" class="ai-human">Frameworks</a>
+          <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
+          <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+          <hr class="nav-separator" />
+
+          <a href="/opacity.html" class="ai-human">Delegated Opacity</a>
+          <hr class="nav-separator" />
+          <a href="/pilotmemo.html" class="ai-human">Pilot Memo™</a>
+
+          <!-- Bloc 2 -->
+          <a href="/immersion.html" class="ai-human">Silent Immersion™</a>
+          <a href="/propagation.html" class="ai-human">Self-Audit Culture™</a>
+          <a href="/nrz.html" class="ai-human">No Recapture Zone™</a>
+
+          <!-- Bloc 3 -->
+          <hr class="nav-separator" />
+          <a href="/exit.html" class="ai-human">Clean Exit™</a>
+          <a href="/deal.html" class="ai-human">Resolution Contract</a>
+        </div>
+      </header>
+      <main class="main-content">
+        <section id="email-version-c">
+          <h1>Strategic Operating Frameworks</h1>
+
+          <!-- BLOCK 2 — Strategic Output Notice -->
+
+          <!-- BLOCK 3 — Framework Presentation -->
+          <p>
+            This document introduces two proprietary frameworks — both
+            structured through full immersion and live encoding — both relying
+            on the above mentionned deal engine
+          </p>
+
+          <ul>
+            <li>
+              <strong>Post-Litigious Operating Framework™</strong> — A parallel
+              resolution engine for unresolved workplace conflicts. It reveals
+              structural harm, generates sovereign artefacts, and escalates the
+              signal to strategic altitude — where boards, investors, and
+              ecosystems can no longer ignore it.
+            </li>
+            <li>
+              <strong>Post-EBITDA Operating Framework™</strong> — a strategic
+              agency model designed to clean, assess, and reposition any
+              overlooked asset or partnership, from inside.
+            </li>
+          </ul>
+
+          <!-- BLOCK 4 — Minimal Exit Orientation -->
+          <p>At this point, only two exits remain:</p>
+
+          <ul>
+            <li>
+              A strategic, low-friction
+              <a href="./immersion.html" class="internal-link">immersion</a>
+              conducted within a delimited asset or perimeter. It aims to
+              diagnose real viability — relational, operational, narrative, and
+              ethical — without triggering invasive tools or HR protocols.
+            </li>
+            <li>
+              A sovereign
+              <a href="immersion.html#self-audit-culture" class="internal-link"
+                >propagation strategy</a
+              >
+              activating through symbolic infiltration of an integrity cell.
+              Designed to dissolve internal toxic patterns through ethical
+              contagion. Deployment is triggered by GP or CEO assent.
+            </li>
+          </ul>
+        </section>
+      </main>
+      <script>
+        const toggleBtn = document.getElementById("toggleNavbar");
+        const navbar = document.querySelector(".navbar");
+
+        toggleBtn?.addEventListener("click", () => {
+          // 1) on inverse 'collapsed' sur la sidebar
+          const isNowCollapsed = navbar.classList.toggle("collapsed");
+          // 2) on pose 'nav-open' **UNIQUEMENT si** la sidebar est DÉPLIÉE
+          //    (c’est-à-dire `collapsed === false`)
+          document.body.classList.toggle("nav-open", !isNowCollapsed);
+        });
+
+        // Script pour injecter le footer (inchangé)
+        fetch("/components/footer.html")
+          .then((res) => res.text())
+          .then((html) => {
+            const footerContainer = document.createElement("div");
+            footerContainer.innerHTML = html;
+            document.body.appendChild(footerContainer);
+          });
+      </script>
+    </body>
+  </html>
+</section>

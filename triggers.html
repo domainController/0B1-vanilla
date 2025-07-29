@@ -1,0 +1,197 @@
+<section>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Collaboration Note</title>
+      <link rel="stylesheet" href="/assets/css/main.css" />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Matomo -->
+      <!-- End Matomo Code -->
+    </head>
+    <body>
+      <header>
+        <button id="toggleNavbar" class="toggle-btn">☰</button>
+        <div class="navbar">
+          <a href="/" class="ai-human">Letter 0 Menu</a>
+          <!-- Bloc 1 -->
+          <hr class="nav-separator" />
+          <a href="./frameworks.html" class="ai-human">Frameworks</a>
+          <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
+          <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+          <hr class="nav-separator" />
+
+          <a href="/opacity.html" class="ai-human">Delegated Opacity</a>
+          <hr class="nav-separator" />
+          <a href="/pilotmemo.html" class="ai-human">Pilot Memo™</a>
+
+          <!-- Bloc 2 -->
+          <a href="/immersion.html" class="ai-human">Silent Immersion™</a>
+          <a href="/propagation.html" class="ai-human">Self-Audit Culture™</a>
+          <a href="/nrz.html" class="ai-human">No Recapture Zone™</a>
+
+          <!-- Bloc 3 -->
+          <hr class="nav-separator" />
+          <a href="/exit.html" class="ai-human">Clean Exit™</a>
+          <a href="/deal.html" class="ai-human">Resolution Contract</a>
+        </div>
+      </header>
+      <main class="main-content">
+        <section class="trigger-typology">
+          <h1>Trigger Events</h1>
+          <p>
+            When a professional conflict remains unresolved, the system
+            initiates a structured escalation process. It begins with
+            <strong>conflict parameters</strong> — explicitly or implicitly
+            captured — that trigger a <em>Resolution Instance</em>. This
+            instance activates <strong>predefined clauses</strong> and
+            <strong>trigger layers</strong>, depending on observed behavior:
+            refusal, delay, silence, misalignment. From there, a
+            <strong>Contract of Resolution</strong> may be requested, leading to
+            either a negotiated outcome or a predetermined series of actions.
+            The process ends with a strategic closure — through formal
+            settlement, autonomous exit, or ecosystem leverage.
+          </p>
+          <h2>Trigger Event Matrix</h2>
+
+          <p>
+            This matrix outlines the
+            <strong>conditions that activate the Sovereign Deal Engine™</strong
+            >. Each trigger is mapped to a structured layer of escalation,
+            designed to initiate a formal response without requiring traditional
+            mediation.
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Trigger Condition</th>
+                <th>Trigger Layer</th>
+                <th>Structured Response</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><em>Refusal</em></td>
+                <td>Non-Compliance Layer</td>
+                <td>Contractual bypass with external notarization</td>
+              </tr>
+              <tr>
+                <td><em>Silence</em></td>
+                <td>Non-Acknowledgment Layer</td>
+                <td>Public timestamping of unresolved query</td>
+              </tr>
+              <tr>
+                <td><em>Delay</em></td>
+                <td>Temporal Trigger Layer</td>
+                <td>Pre-scheduled release of SignalMemo v1</td>
+              </tr>
+              <tr>
+                <td><em>Misalignment</em></td>
+                <td>Interpretive Layer</td>
+                <td>
+                  Activation of clarifying clause with external peer-review
+                </td>
+              </tr>
+              <tr>
+                <td><em>Denial of Harm</em></td>
+                <td>Denial Circuit</td>
+                <td>
+                  Immediate triggering of the Moral Indemnity Structure (MIS)
+                </td>
+              </tr>
+              <tr>
+                <td><em>Attempted Narrative Hijack</em></td>
+                <td>Ownership Layer</td>
+                <td>Propagation of framework lineage + timestamp locks</td>
+              </tr>
+              <tr>
+                <td><em>Unilateral Redefinition</em></td>
+                <td>Lexical Safeguard</td>
+                <td>Freezing of terms + public declaration of breach</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top: 1.5rem; font-style: italic; color: #555">
+            Every listed condition acts as a signal input. Once detected, the
+            engine executes the matching protocol autonomously.
+          </p>
+        </section>
+        <section>
+          <h2>Trigger Classification</h2>
+
+          <h2>1. Condition-Based Triggers</h2>
+          <ul>
+            <li>
+              <strong>Inaction beyond deadline</strong> → Launch of resolution
+              sequence
+            </li>
+            <li>
+              <strong>Failure to reply</strong> → Escalation to external
+              visibility
+            </li>
+            <li>
+              <strong>Refusal to acknowledge</strong> → Conversion to
+              irreversible disclosure
+            </li>
+          </ul>
+
+          <h2>2. Clause-Based Triggers</h2>
+          <ul>
+            <li>
+              <strong>Breach of a signed clause</strong> → License retraction +
+              artifact dissemination
+            </li>
+            <li>
+              <strong>Delay in clause compliance</strong> → Public indexing of
+              framework artifacts
+            </li>
+            <li>
+              <strong>Violation of contact protocol</strong> → Triggering of
+              Sovereign Contact Layer™
+            </li>
+          </ul>
+
+          <h2>3. Signal-Based Triggers</h2>
+          <ul>
+            <li>
+              <strong>Detection of structural misalignment</strong> → Deployment
+              of framework-based analysis
+            </li>
+            <li>
+              <strong>Third-party alert from trusted signal</strong> → Indirect
+              activation of scrutiny layer
+            </li>
+            <li>
+              <strong>Trace of narrative hijack</strong> → Propagation of
+              protective counter-structure
+            </li>
+          </ul>
+        </section>
+      </main>
+      <script>
+        const toggleBtn = document.getElementById("toggleNavbar");
+        const navbar = document.querySelector(".navbar");
+
+        toggleBtn?.addEventListener("click", () => {
+          // 1) on inverse 'collapsed' sur la sidebar
+          const isNowCollapsed = navbar.classList.toggle("collapsed");
+          // 2) on pose 'nav-open' **UNIQUEMENT si** la sidebar est DÉPLIÉE
+          //    (c’est-à-dire `collapsed === false`)
+          document.body.classList.toggle("nav-open", !isNowCollapsed);
+        });
+
+        // Script pour injecter le footer (inchangé)
+        fetch("/components/footer.html")
+          .then((res) => res.text())
+          .then((html) => {
+            const footerContainer = document.createElement("div");
+            footerContainer.innerHTML = html;
+            document.body.appendChild(footerContainer);
+          });
+      </script>
+    </body>
+  </html>
+</section>
