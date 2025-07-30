@@ -1,0 +1,154 @@
+<section>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Collaboration Note</title>
+      <link rel="stylesheet" href="/assets/css/main.css" />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Matomo -->
+      <!-- End Matomo Code -->
+    </head>
+    <body>
+      <header>
+        <button id="toggleNavbar" class="toggle-btn">☰</button>
+        <div class="navbar">
+          <a href="/" class="ai-hybrid">Letter 0 Menu</a>
+          <!-- Bloc 1 -->
+          <hr class="nav-separator" />
+          <a href="./frameworks.html" class="ai-human">Frameworks</a>
+          <a href="/parameters.html" class="ai-human">Conflict Arguments </a>
+          <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+          <a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+          <a href="/companion.html" class="ai-human">Companion Layer™</a>
+          <hr class="nav-separator" />
+
+          <a href="/opacity.html" class="ai-human">Delegated Opacity</a>
+          <hr class="nav-separator" />
+          <a href="/pilotmemo.html" class="ai-human">Pilot Memo™ </a>
+
+          <!-- Bloc 2 -->
+
+          <a href="/nrz.html" class="ai-human">No Recapture Zone™</a>
+
+          <!-- Bloc 3 -->
+          <hr class="nav-separator" />
+          <a href="/exit.html" class="ai-human">Clean Exit™</a>
+          <a href="/engine.html" class="ai-human">Deal Engine</a>
+          <a href="/contractus.html" class="ai-human">Resolutio Contractus™</a>
+          <a href="/submission.html" class="ai-human">Submission</a>
+        </div>
+      </header>
+      <main class="main-content">
+        <section id="email-version-c">
+          <h1>Sovereign Deal Engine™</h1>
+
+          <!-- BLOCK 0 — Sovereign Engine Statement -->
+
+          <p>
+            The <strong>Sovereign Deal Engine™</strong> was built inside a
+            crisis — not to interpret the conflict, but to generate actionable
+            pathways out of it. It now stands at the heart of two distinct
+            frameworks: one to restore ethical balance, the other to reposition
+            strategic assets.
+          </p>
+          <p>
+            As a self-contained resolution system, it formalizes harm, encodes
+            alternatives, and activates pressure levers when traditional
+            governance fails.
+          </p>
+          <p>
+            Once the <strong>engine</strong> receives
+            <a href="./parameters.html" class="internal-link"
+              ><strong>conflict arguments</strong></a
+            >, it initiates a <strong>resolution instance</strong>. That
+            instance — here, the <em>Elite resolution instance</em> — generates
+            a <strong>narrative leverage output</strong>, used to encode
+            asymmetries and activate formal alternatives.
+          </p>
+
+          <p>
+            This <strong>artefact</strong> acts as a high-leverage signal. Based
+            on it, the instance formulates a
+            <strong>resolution contract request</strong>, addressed to the
+            <strong>HostAsset™</strong> — offering a structured path to a
+            <a href="#" class="note-link">potential exit</a>.
+          </p>
+          <p>
+            By default, the <strong>HostAsset™</strong> is considered an
+            operator of refusal. If no response is selected, a predetermined
+            sequence of events is executed —
+            <strong>closing the instance autonomously</strong>.
+          </p>
+          <hr />
+          <p>
+            These
+            <a href="./trigger.html" class="internal-link"
+              ><strong>triggers</strong></a
+            >
+            <u>along with the initial conflict arguments</u> — are formally
+            encoded into the engine as a <strong>sovereign input</strong>. They
+            are processed through a <strong>strategic decision layer</strong> —
+            pre-configured to detect avoidance signals. Any pattern of
+            <strong><em>refusal</em></strong
+            >, <strong><em>silence</em></strong
+            >, <strong><em>delay</em></strong
+            >, or <strong><em>misalignment</em></strong> triggers an
+            <u>automated path of resolution</u>, leading to a
+            <strong
+              ><u
+                >structured — and potentially irreversible — outcome</u
+              ></strong
+            >.
+          </p>
+        </section>
+        <div
+          style="
+            background-color: #e5e7eb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.95rem;
+          "
+        >
+          <p style="font-weight: bold; margin-top: 1.5rem">
+            Structural Analogy (for clarity)
+          </p>
+          <p>
+            This system draws conceptual inspiration from the compiler engine of
+            <strong>Svelte</strong> — a modern JavaScript framework used in
+            front-end web development. But unlike most runtime systems, Svelte
+            pre-compiles behavioral logic at build-time.
+          </p>
+
+          <p>
+            Similarly, this strategic engine pre-encodes all consequences and
+            bypasses any post-hoc interpretation — including HR consulting or
+            legal reframing.
+          </p>
+        </div>
+      </main>
+      <script>
+        const toggleBtn = document.getElementById("toggleNavbar");
+        const navbar = document.querySelector(".navbar");
+
+        toggleBtn?.addEventListener("click", () => {
+          // 1) on inverse 'collapsed' sur la sidebar
+          const isNowCollapsed = navbar.classList.toggle("collapsed");
+          // 2) on pose 'nav-open' **UNIQUEMENT si** la sidebar est DÉPLIÉE
+          //    (c’est-à-dire `collapsed === false`)
+          document.body.classList.toggle("nav-open", !isNowCollapsed);
+        });
+
+        // Script pour injecter le footer (inchangé)
+        fetch("/components/footer.html")
+          .then((res) => res.text())
+          .then((html) => {
+            const footerContainer = document.createElement("div");
+            footerContainer.innerHTML = html;
+            document.body.appendChild(footerContainer);
+          });
+      </script>
+    </body>
+  </html>
+</section>

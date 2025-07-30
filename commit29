@@ -8,8 +8,11 @@ index 02bea50..49f1142 100644
            <hr class="nav-separator" />
 -          <a href="/violations.html" class="ai-human">Structural Origin</a>
 +          <a href="./frameworks.html" class="ai-human">Frameworks</a>
-+          <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
++          <a href="/parameters.html" class="ai-human">Conflict Kernel Arguments
+</a>
 +          <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+<a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+<a href="/companion.html" class="ai-human">Companion Layer™</a>
 +          <hr class="nav-separator" />
 +
            <a href="/opacity.html" class="ai-human">Delegated Opacity</a>
@@ -29,8 +32,8 @@ index 02bea50..49f1142 100644
            <hr class="nav-separator" />
            <a href="/exit.html" class="ai-human">Clean Exit™</a>
 -          <a href="/letter.html" class="ai-human">Open Closure Letter</a>
-+          <a href="/deal.html" class="ai-human">Resolution Contract</a>
-         </div>
++          <a href="/engine.html" class="ai-human">Deal Engine</a> 
+<a href="/contract.html" class="ai-human">Resolutio Contractus™</a>         </div>
        </header>
        <main class="main-content">
 -        <section id="email-version-c">
@@ -545,7 +548,8 @@ index 0783fc9..bd03140 100644
          <hr class="nav-separator" />
 -        <a href="/violations.html" class="ai-human">Structural Origin</a>
 +       <a href="./frameworks.html" class="ai-human">Frameworks</a>
-+ <hr class="nav-separator" /> <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
++ <hr class="nav-separator" /> <a href="/parameters.html" class="ai-human">Conflict Kernel Arguments
+</a>
          <a href="/opacity.html" class="ai-human">Delegated Opacity</a>
 -        <a href="/dissociated.html" class="ai-human">Dissociated Governance</a>
 +       <a href="/pilotmemo.html" class="ai-human">Pilot Memo™</a>
@@ -561,8 +565,8 @@ index 0783fc9..bd03140 100644
          <hr class="nav-separator" />
          <a href="/exit.html" class="ai-human">Clean Exit™</a>
 -        <a href="/letter.html" class="ai-human">Open Closure Letter</a>
-+         <a href="/deal.html" class="ai-human">Resolution Contract</a>
-       </div>
++         <a href="/engine.html" class="ai-human">Deal Engine</a> 
+<a href="/contract.html" class="ai-human">Resolutio Contractus™</a>       </div>
      </header>
      <main class="main-content">
 diff --git a/dissociated.html b/dissociated.html
@@ -1244,8 +1248,11 @@ index d7a434c..0b09214 100644
          <hr class="nav-separator" />
 -        <a href="/violations.html" class="ai-human">Structural Origin</a>
 +        <a href="./frameworks.html" class="ai-human">Frameworks</a>
-+        <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
++        <a href="/parameters.html" class="ai-human">Conflict Kernel Arguments
+</a>
 +        <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+<a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+<a href="/companion.html" class="ai-human">Companion Layer™</a>
 +        <hr class="nav-separator" />
 +
          <a href="/opacity.html" class="ai-human">Delegated Opacity</a>
@@ -1263,8 +1270,8 @@ index d7a434c..0b09214 100644
          <hr class="nav-separator" />
          <a href="/exit.html" class="ai-human">Clean Exit™</a>
 -        <a href="/letter.html" class="ai-human">Open Closure Letter</a>
-+        <a href="/deal.html" class="ai-human">Resolution Contract</a>
-       </div>
++        <a href="/engine.html" class="ai-human">Deal Engine</a> 
+<a href="/contract.html" class="ai-human">Resolutio Contractus™</a>       </div>
      </header>
      <main class="main-content">
 diff --git a/immersion.html b/immersion.html
@@ -1277,8 +1284,11 @@ index 9ffdeb6..eb048f5 100644
            <hr class="nav-separator" />
 -          <a href="/violations.html" class="ai-human">Structural Origin</a>
 +          <a href="./frameworks.html" class="ai-human">Frameworks</a>
-+          <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
++          <a href="/parameters.html" class="ai-human">Conflict Kernel Arguments
+</a>
 +          <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+<a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+<a href="/companion.html" class="ai-human">Companion Layer™</a>
 +          <hr class="nav-separator" />
 +
            <a href="/opacity.html" class="ai-human">Delegated Opacity</a>
@@ -1298,8 +1308,8 @@ index 9ffdeb6..eb048f5 100644
            <hr class="nav-separator" />
            <a href="/exit.html" class="ai-human">Clean Exit™</a>
 -          <a href="/letter.html" class="ai-human">Open Closure Letter</a>
-+          <a href="/deal.html" class="ai-human">Resolution Contract</a>
-         </div>
++          <a href="/engine.html" class="ai-human">Deal Engine</a> 
+<a href="/contract.html" class="ai-human">Resolutio Contractus™</a>         </div>
        </header>
        <main class="main-content">
 -        <h1>Viability Scan Sheet</h1>
@@ -1317,8 +1327,11 @@ index b4a9368..4800de3 100644
          <hr class="nav-separator" />
 -        <a href="/violations.html" class="ai-human">Structural Origin</a>
 +        <a href="./frameworks.html" class="ai-human">Frameworks</a>
-+        <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
++        <a href="/parameters.html" class="ai-human">Conflict Kernel Arguments
+</a>
 +        <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+<a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+<a href="/companion.html" class="ai-human">Companion Layer™</a>
 +        <hr class="nav-separator" />
 +
          <a href="/opacity.html" class="ai-human">Delegated Opacity</a>
@@ -1336,8 +1349,8 @@ index b4a9368..4800de3 100644
          <hr class="nav-separator" />
          <a href="/exit.html" class="ai-human">Clean Exit™</a>
 -        <a href="/letter.html" class="ai-human">Open Closure Letter</a>
-+        <a href="/deal.html" class="ai-human">Resolution Contract</a>
-       </div>
++        <a href="/engine.html" class="ai-human">Deal Engine</a> 
+<a href="/contract.html" class="ai-human">Resolutio Contractus™</a>       </div>
      </header>
      <main class="main-content">
 @@ -106,7 +110,7 @@
@@ -1370,8 +1383,11 @@ index bdef723..ef6a6fc 100644
 +        <a href="/pilotmemo.html" class="ai-human">Pilot Memo™</a>
 +        <hr class="nav-separator" />
 +        <a href="./frameworks.html" class="ai-human">Frameworks</a>
-+        <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
++        <a href="/parameters.html" class="ai-human">Conflict Kernel Arguments
+</a>
 +        <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+<a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+<a href="/companion.html" class="ai-human">Companion Layer™</a>
          <hr class="nav-separator" />
 -        <a href="/violations.html" class="ai-human">Structural Origin</a>
  
@@ -1381,8 +1397,8 @@ index bdef723..ef6a6fc 100644
 -        <a href="/clauses.html" class="ai-human">No Recapture Zone™</a>
 -        <a href="/letter.html" class="ai-human">Open Closure Letter</a>
 +        <a href="/nrz.html" class="ai-human">No Recapture Zone™</a>
-+        <a href="/deal.html" class="ai-human">Resolution Contract</a>
-       </div>
++        <a href="/engine.html" class="ai-human">Deal Engine</a> 
+<a href="/contract.html" class="ai-human">Resolutio Contractus™</a>       </div>
      </header>
      <main class="main-content">
 diff --git a/letter.html b/letter.html
@@ -1631,8 +1647,11 @@ index f736c9a..2c42707 100644
 +        <a href="/pilotmemo.html" class="ai-human">Pilot Memo™</a>
 +        <hr class="nav-separator" />
 +        <a href="./frameworks.html" class="ai-human">Frameworks</a>
-+        <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
++        <a href="/parameters.html" class="ai-human">Conflict Kernel Arguments
+</a>
 +        <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+<a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+<a href="/companion.html" class="ai-human">Companion Layer™</a>
          <hr class="nav-separator" />
 -        <a href="/violations.html" class="ai-human">Structural Origin</a>
  
@@ -1654,8 +1673,11 @@ index fd211fc..f8693fa 100644
          <hr class="nav-separator" />
 -        <a href="/violations.html" class="ai-human">Structural Origin</a>
 +        <a href="./frameworks.html" class="ai-human">Frameworks</a>
-+        <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
++        <a href="/parameters.html" class="ai-human">Conflict Kernel Arguments
+</a>
 +        <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+<a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+<a href="/companion.html" class="ai-human">Companion Layer™</a>
 +        <hr class="nav-separator" />
 +
          <a href="/opacity.html" class="ai-human">Delegated Opacity</a>
@@ -1673,8 +1695,8 @@ index fd211fc..f8693fa 100644
          <hr class="nav-separator" />
          <a href="/exit.html" class="ai-human">Clean Exit™</a>
 -        <a href="/letter.html" class="ai-human">Open Closure Letter</a>
-+        <a href="/deal.html" class="ai-human">Resolution Contract</a>
-       </div>
++        <a href="/engine.html" class="ai-human">Deal Engine</a> 
+<a href="/contract.html" class="ai-human">Resolutio Contractus™</a>       </div>
      </header>
      <main class="main-content">
 diff --git a/old_pages/ardent.html b/old_pages/ardent.html
@@ -1689,8 +1711,11 @@ index e099336..a9280e0 100644
 +        <a href="/pilotmemo.html" class="ai-human">Pilot Memo™</a>
 +        <hr class="nav-separator" />
 +        <a href="./frameworks.html" class="ai-human">Frameworks</a>
-+        <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
++        <a href="/parameters.html" class="ai-human">Conflict Kernel Arguments
+</a>
 +        <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+<a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+<a href="/companion.html" class="ai-human">Companion Layer™</a>
          <hr class="nav-separator" />
 -        <a href="/violations.html" class="ai-human">Structural Origin</a>
  
@@ -1700,8 +1725,8 @@ index e099336..a9280e0 100644
 -        <a href="/clauses.html" class="ai-human">No Recapture Zone™</a>
 -        <a href="/letter.html" class="ai-human">Open Closure Letter</a>
 +        <a href="/nrz.html" class="ai-human">No Recapture Zone™</a>
-+        <a href="/deal.html" class="ai-human">Resolution Contract</a>
-       </div>
++        <a href="/engine.html" class="ai-human">Deal Engine</a> 
+<a href="/contract.html" class="ai-human">Resolutio Contractus™</a>       </div>
      </header>
      <main class="main-content">
 diff --git a/old_pages/legacy copy.html b/old_pages/legacy copy.html
@@ -1716,8 +1741,11 @@ index ddee03e..9119532 100644
 +        <a href="/pilotmemo.html" class="ai-human">Pilot Memo™</a>
 +        <hr class="nav-separator" />
 +        <a href="./frameworks.html" class="ai-human">Frameworks</a>
-+        <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
++        <a href="/parameters.html" class="ai-human">Conflict Kernel Arguments
+</a>
 +        <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+<a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+<a href="/companion.html" class="ai-human">Companion Layer™</a>
          <hr class="nav-separator" />
 -        <a href="/violations.html" class="ai-human">Structural Origin</a>
  
@@ -1727,8 +1755,8 @@ index ddee03e..9119532 100644
 -        <a href="/clauses.html" class="ai-human">No Recapture Zone™</a>
 -        <a href="/letter.html" class="ai-human">Open Closure Letter</a>
 +        <a href="/nrz.html" class="ai-human">No Recapture Zone™</a>
-+        <a href="/deal.html" class="ai-human">Resolution Contract</a>
-       </div>
++        <a href="/engine.html" class="ai-human">Deal Engine</a> 
+<a href="/contract.html" class="ai-human">Resolutio Contractus™</a>       </div>
      </header>
      <main class="main-content">
 diff --git a/opacity.html b/opacity.html
@@ -1741,8 +1769,11 @@ index b5d7ec2..ec0787b 100644
          <hr class="nav-separator" />
 -        <a href="/violations.html" class="ai-human">Structural Origin</a>
 +        <a href="./frameworks.html" class="ai-human">Frameworks</a>
-+        <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
++        <a href="/parameters.html" class="ai-human">Conflict Kernel Arguments
+</a>
 +        <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+<a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+<a href="/companion.html" class="ai-human">Companion Layer™</a>
 +        <hr class="nav-separator" />
 +
          <a href="/opacity.html" class="ai-human">Delegated Opacity</a>
@@ -1761,8 +1792,8 @@ index b5d7ec2..ec0787b 100644
          <hr class="nav-separator" />
          <a href="/exit.html" class="ai-human">Clean Exit™</a>
 -        <a href="/letter.html" class="ai-human">Open Closure Letter</a>
-+        <a href="/deal.html" class="ai-human">Resolution Contract</a>
-       </div>
++        <a href="/engine.html" class="ai-human">Deal Engine</a> 
+<a href="/contract.html" class="ai-human">Resolutio Contractus™</a>       </div>
      </header>
      <main class="main-content">
 diff --git a/propagation.html b/propagation.html
@@ -1775,8 +1806,11 @@ index 945cd01..2321811 100644
            <hr class="nav-separator" />
 -          <a href="/violations.html" class="ai-human">Structural Origin</a>
 +          <a href="./frameworks.html" class="ai-human">Frameworks</a>
-+          <a href="/parameters.html" class="ai-human">Conflict Parameters</a>
++          <a href="/parameters.html" class="ai-human">Conflict Kernel Arguments
+</a>
 +          <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+<a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+<a href="/companion.html" class="ai-human">Companion Layer™</a>
 +          <hr class="nav-separator" />
 +
            <a href="/opacity.html" class="ai-human">Delegated Opacity</a>
@@ -1796,8 +1830,8 @@ index 945cd01..2321811 100644
            <hr class="nav-separator" />
            <a href="/exit.html" class="ai-human">Clean Exit™</a>
 -          <a href="/letter.html" class="ai-human">Open Closure Letter</a>
-+          <a href="/deal.html" class="ai-human">Resolution Contract</a>
-         </div>
++          <a href="/engine.html" class="ai-human">Deal Engine</a> 
+<a href="/contract.html" class="ai-human">Resolutio Contractus™</a>         </div>
        </header>
        <main class="main-content">
 diff --git a/violations.html b/violations.html

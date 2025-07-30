@@ -1,0 +1,176 @@
+<section>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Collaboration Note</title>
+      <link rel="stylesheet" href="/assets/css/main.css" />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Matomo -->
+      <!-- End Matomo Code -->
+    </head>
+    <body>
+      <header>
+        <button id="toggleNavbar" class="toggle-btn">☰</button>
+        <div class="navbar">
+          <a href="/" class="ai-hybrid">Letter 0 Menu</a>
+          <!-- Bloc 1 -->
+          <hr class="nav-separator" />
+          <a href="./frameworks.html" class="ai-human">Frameworks</a>
+          <a href="/parameters.html" class="ai-human">Conflict Arguments </a>
+          <a href="/triggers.html" class="ai-human">Trigger Protocols™</a>
+          <a href="/protocols.html" class="ai-human">Exposure Scenarios</a>
+          <a href="/companion.html" class="ai-human">Companion Layer™</a>
+          <hr class="nav-separator" />
+
+          <a href="/opacity.html" class="ai-human">Delegated Opacity</a>
+          <hr class="nav-separator" />
+          <a href="/pilotmemo.html" class="ai-human">Pilot Memo™</a>
+
+          <!-- Bloc 2 -->
+
+          <a href="/nrz.html" class="ai-human">No Recapture Zone™</a>
+
+          <!-- Bloc 3 -->
+          <hr class="nav-separator" />
+          <a href="/exit.html" class="ai-human">Clean Exit™</a>
+          <a href="/engine.html" class="ai-human">Deal Engine</a>
+          <a href="/contractus.html" class="ai-human">Resolutio Contractus™</a>
+          <a href="/submission.html" class="ai-human">Submission</a>
+        </div>
+      </header>
+      <main class="main-content">
+        <section id="post-exposure-frictions" class="clause-section">
+          <h1>Post-Exposure Frictions — Ethical Constraint Simulations</h1>
+
+          <p>
+            This section introduces a set of <em>simulated constraints</em> —
+            ethical friction layers injected into the authorship process,
+            inspired by the anticipated presence of high-integrity figures.
+          </p>
+
+          <p>
+            These include a <strong>set of postulated actors</strong> whose
+            potential presence at the table reshapes tone, scope, and
+            permissible escalation.
+          </p>
+
+          <h3>👥 Friction Figures (Simulated)</h3>
+          <ul>
+            <li>
+              <a href="#" class="note-link"
+                >ex–Ekobrottsmyndigheten specialist</a
+              >
+              — former Swedish Economic Crime Authority officer, used as moral
+              filter against financial retaliation, structural threats or
+              narrative overreach.
+            </li>
+            <li>
+              <a href="#" class="note-link">ex–Skatteverket fraud auditor</a> —
+              specialized in forensic detection of fiscal misconduct, activates
+              compliance-level logic in tone and projection.
+            </li>
+            <li>
+              <a href="#" class="note-link"
+                >ex–Foresight (cyberforensics unit)</a
+              >
+              — simulation layer for digital traceability, source protection,
+              and metadata integrity across the framework’s release.
+            </li>
+            <li>
+              <a href="#" class="note-link"
+                >future strategic VP (humiliated/exfiltrated)</a
+              >
+              — serves as dignity-check and operational sanity filter when
+              crafting pressure structures.
+            </li>
+            <li>
+              <a href="#" class="note-link"
+                >IP / M&A lawyer (future structuring)</a
+              >
+              — ensures alignment with licensing logics and exit compliance.
+              Acts as convergence validator.
+            </li>
+          </ul>
+
+          <h3>🧭 Purpose & Tactical Role</h3>
+          <ul>
+            <li>Prevent moral drift or retaliatory tone escalation.</li>
+            <li>
+              Demonstrate internal narrative control to GPs, LPs, and legal
+              advisors.
+            </li>
+            <li>
+              Enable <strong>reveal-on-demand governance signals</strong> during
+              litigation or negotiation.
+            </li>
+            <li>
+              Act as proof of
+              <a href="#" class="note-link">internal audit simulation</a>.
+            </li>
+          </ul>
+
+          <h3>🧨 Strategic Implications</h3>
+          <ul>
+            <li>
+              May later be <strong>retrospectively disclosed</strong> to prove
+              the framework was governed by constraints — reinforcing its
+              licensing potential.
+            </li>
+            <li>
+              Serves as a <strong>cognitive brake</strong> for the author —
+              preventing absolutist escalations, while allowing firm posture.
+            </li>
+            <li>
+              LPs may interpret this as a
+              <a href="#" class="note-link">self-stabilizing system</a>, making
+              the asset safer to support or adopt.
+            </li>
+          </ul>
+
+          <h3>🧷 Related Clauses</h3>
+          <ul>
+            <li>
+              <a href="safeguards.html#a6" class="note-link"
+                >Clause A.6 – Ethical Horizon Lock</a
+              >
+            </li>
+            <li>
+              <a href="safeguards.html#a8" class="note-link"
+                >Clause A.8 – Governance Simulation Declaration</a
+              >
+            </li>
+          </ul>
+
+          <p class="caption">
+            These frictions are not public-facing actors — they operate as
+            invisible ethics engines within the framework's authorship layer.
+          </p>
+        </section>
+      </main>
+
+      <script>
+        const toggleBtn = document.getElementById("toggleNavbar");
+        const navbar = document.querySelector(".navbar");
+
+        toggleBtn?.addEventListener("click", () => {
+          // 1) on inverse 'collapsed' sur la sidebar
+          const isNowCollapsed = navbar.classList.toggle("collapsed");
+          // 2) on pose 'nav-open' **UNIQUEMENT si** la sidebar est DÉPLIÉE
+          //    (c’est-à-dire `collapsed === false`)
+          document.body.classList.toggle("nav-open", !isNowCollapsed);
+        });
+
+        // Script pour injecter le footer (inchangé)
+        fetch("/components/footer.html")
+          .then((res) => res.text())
+          .then((html) => {
+            const footerContainer = document.createElement("div");
+            footerContainer.innerHTML = html;
+            document.body.appendChild(footerContainer);
+          });
+      </script>
+    </body>
+  </html>
+</section>
