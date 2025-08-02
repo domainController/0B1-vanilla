@@ -302,7 +302,7 @@ details.info-box[open] {
 
 /* style par défaut : contenu centré */
 .main-content {
-  max-width: 640px;
+  max-width: 720px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
@@ -311,7 +311,7 @@ details.info-box[open] {
 }
 
 /* À l’ouverture desktop : on décale de la moitié de l’espace restant + la sidebar */
-@media (min-width: 641px) {
+@media (min-width: 720px) {
   body.nav-open .main-content {
     /* 
       Explication calc :
