@@ -1,0 +1,298 @@
+diff --git a/clauses.html b/clauses.html
+index c755e4d..9668065 100644
+--- a/clauses.html
++++ b/clauses.html
+@@ -488,7 +488,7 @@
+               </li>
+               <li>
+                 <a href="#protocol-iv" class="note-link"
+-                  >Protocol IV — Running Session Filter™</a
++                  >Protocol IV — Running Sessions Filter™</a
+                 >
+               </li>
+               <li>
+@@ -660,9 +660,55 @@
+             </p>
+           </section>
+           <hr />
+-          <!-- Internal Mirror Protocol -->
+-          <!-- Clauses: 5, 13, 14, 16 -->
+-          <!-- Function: Disqualifying hypocrisy without aggression -->
++          <section class="clause" id="memory-contribution-incentive">
++            <h3>Memory Contribution Incentive Clause™</h3>
++            <p>
++              This clause formalizes the strategic possibility of financially
++              compensating trusted contributors for submitting verifiable
++              narrative fragments or strategic bypass attempts relevant to:
++            </p>
++            <ul>
++              <li><strong>Contact Bypass Register™</strong></li>
++              <li><strong>Narrative Blacklist™</strong></li>
++            </ul>
++            <p>
++              Compensation is only triggered if and when a
++              <em>Call Storage Fund</em> is effectively constituted and actively
++              funded. If such a fund is not available at the time of
++              contribution, a retroactive compensation mechanism may be
++              triggered upon activation.
++            </p>
++            <p>Contributions must:</p>
++            <ul>
++              <li>
++                Be grounded in a specific memory trace (email, message, audio
++                log, etc.)
++              </li>
++              <li>
++                Include verifiable metadata (sender, timestamp, role context)
++              </li>
++              <li>
++                Be classified under either contact evasion patterns or narrative
++                disqualification attempts
++              </li>
++            </ul>
++            <p>
++              All valid entries will be hashed, timestamped, and sealed via the
++              <strong>Automatically Git-Log Heteron Seal™</strong> protocol.
++            </p>
++            <p>
++              The right to activate or deactivate the remuneration process is
++              reserved by the author and may depend on structural events (i.e.
++              activation of sovereign fund, external financing, or litigation
++              closure).
++            </p>
++            <p class="note">
++              Contributions may be submitted via approved secure channels. All
++              submitted entries will be evaluated for strategic coherence, trace
++              integrity, and disqualifying impact.
++            </p>
++          </section>
++          <hr />
+           <section id="clause-5">
+             <h3>5. False Narrative Disarmament Clause</h3>
+ 
+@@ -687,56 +733,157 @@
+           </section>
+           <hr />
+           <section id="clause-6">
+-            <h2>6. Upfront Net Transfer Clause</h2>
++            <h2>6. Payment Willpower Clause™</h2>
++            <p>
++              <strong>Net Amount & Single Transfer</strong><br />
++              The SEK 800,000 sum is a <u>net amount</u> — free of tax,
++              intermediaries, or employer charges. It must be transferred in a
++              <strong>single payment</strong> prior to any formal implementation
++              of the adaptation window or silence clause.
++            </p>
++            <p>
++              <strong>⬩ Contractual Deadline</strong><br />
++              Once acceptance is confirmed — either by signature or by
++              equivalent conduct — the full payment must be executed within
++              <strong>five (5) business days</strong>.
++            </p>
++            <p>
++              <strong>⬩ In Case of Delay: Graduated Trigger Chain</strong><br />
++              Any delay will activate a structured chain of responses, with
++              potential for narrative, contractual, or technical escalation.
++            </p>
++            <ul>
++              <li>
++                <strong>Business Day +1:</strong> Private Git entry with
++                internal timestamp note.
++              </li>
++              <li>
++                <strong>Business Day +3:</strong> Automated Ethereum/Git sealing
++                — no dissemination.
++              </li>
++              <li>
++                <strong>Business Day +5:</strong> Optional activation of an
++                <a href="#authorized-delay-analysis" class="note-link"
++                  >Authorized Delay Analysis Trigger™</a
++                >, with structured follow-up.
++              </li>
++              <li>
++                <strong>Business Day +7:</strong> Open options:<br />
++                • Confidential submission of an internal anomaly report;<br />
++                • Launch of partial contract resolution request;<br />
++                • Discreet propagation to 5–7 junior or strategic figures.
++              </li>
++            </ul>
++            <p>
++              <strong>⬩ Specific Considerations</strong><br />
++              No segmented, deferred, or conditional payment will be
++              accepted.<br />
++              Delays may be interpreted as a <u>revealing structural breach</u>,
++              and may trigger
++              <strong>rights to investigate the root causes</strong> of the
++              block.
++            </p>
++          </section>
++          <hr />
++          <section id="honor-filter-clause">
++            <h2>7. Honor Filter Clause™</h2>
++            <p>
++              <i
++                >Linked to:
++                <a href="#payment-willpower">Payment Willpower Clause</a> ·
++                Bundle: Integrity Gate Bundle™</i
++              >
++            </p>
++
+             <p>
+-              The <strong>800K SEK MIS</strong> is a <u>net amount</u> — free of
+-              taxes, charges, or employer deductions. The full sum must be
+-              transferred <strong>upfront</strong>, in a single transaction,
+-              prior to any adaptation window or silence clause activation.
++              <strong>This is not a salary, a consultancy, or a service.</strong
++              ><br />
++              This payment is not part of any employment, supplier, or
++              subcontractor framework. Nor does it constitute hidden
++              compensation. It is explicitly <u>excluded</u> from HR/payroll
++              obligations (e.g., URSSAF, Skatteverket) and contains no legal
++              subordination.
+             </p>
++
++            <p>
++              It is an <strong>exposure-based recognition</strong> — not tied to
++              deliverables or performance metrics. Exposure is defined as a
++              sequence of presence, observation, and silent anchoring within a
++              real structure — outside of any formal role. (cf.
++              <a href="#moral-indemnity" class="note-link"
++                >Moral Indemnity Structure</a
++              >)
++            </p>
++
+             <p>
+-              <u>Once acceptance is confirmed</u> — whether explicitly or by
+-              conduct — the
+               <strong
+-                >payment must be cleared within five (5) business days</strong
+-              >. Any delay will be interpreted as a structural breach and may
+-              trigger <u>partial dissemination of the letter</u> to a restricted
+-              group of internal stakeholders (6–7 selected staff).
++                >Any attempt to reinterpret or requalify this payment</strong
++              >
++              — whether explicit or implicit — will be
++              <u>considered abusive</u> and may trigger retroactive contractual
++              scrutiny. Even in the event of a later HR or procurement
++              reintegration, the clause’s primary nature shall prevail.
+             </p>
++
+             <p>
+-              <mark style="background-color: #e0e0e0"
+-                >No segmented payment, deferred settlement, or conditional
+-                disbursement will be accepted.</mark
++              This clause activates an inverted legitimacy check: <br />
++              <i
++                >If accepted without distortion, it signals that the payer is
++                ethically upgraded.</i
+               >
+-              This sequence is part of the
+-              <a href="#ethical-dissemination" class="note-link"
+-                >Self-Audit Culture™ Protocol</a
++              <br />
++              Acceptance will be logged in Git with an
++              <u>ETHICAL ALIGNMENT / CLAUSE 7</u> tag.
++            </p>
++
++            <p>
++              This clause functions as an <strong>invisible gate</strong> —
++              filtering those capable of acting outside the dependency frame. It
++              is not a command. It is a structural mirror. <br />
++              <i>You pay without asking, or you don’t belong here.</i>
++            </p>
++
++            <p>
++              <strong>Integrity mechanisms:</strong><br />
++              – Refusal or hesitation may trigger a
++              <u>Passive Refusal Trigger — Honor Watch</u>.<br />
++              – A private evaluation matrix may be activated (see Trace Intakes
++              Protocol).<br />
++              – Balise interne :
++              <u
++                >narrative sovereignty = preserved (cf. Sovereignty Index
++                Sheet)</u
+               >
+-              already activated.
+             </p>
+           </section>
+           <hr />
+ 
+-          <p>
+-            <strong>[7] Sovereign Commitment Clause</strong><br />
+-            Any attempt to reframe the <em>Upfront Net Transfer Clause</em> as
+-            employment, consultancy, or partial service delivery will be
+-            understood as a breach of the sovereign logic at the core of this
+-            framework. This is not a job. This is indemnity tied to exposure,
+-            not tasks.
+-          </p>
+-          <hr />
+-
+-          <p>
+-            <strong>[8] Delay Trigger Clause</strong><br />
+-            Any delay in the full upfront payment of the 800K SEK MIS —
+-            justified by <em>“further review”</em>, <em>“external counsel”</em>,
+-            or <em>“board alignment”</em> — will trigger automatic Git archiving
+-            of the full offer structure and related discussions.
+-          </p>
+-          <p>
+-            This will expose the refusal to engage, not the negotiation content.
+-          </p>
++          <section id="clause-authorized-delay-analysis">
++            <h2>Authorized Delay Analysis Trigger™</h2>
++            <p>
++              Any delay in net transfer — once formal agreement is confirmed —
++              will automatically activate an
++              <strong>Authorized Delay Analysis Trigger™</strong>.
++            </p>
++            <p>
++              This trigger requires the counterparty (or designated officer) to
++              submit a <u>documented justification</u> for the delay, within 72
++              hours, in a structured format. Absence of submission will be
++              interpreted as strategic obstruction or disinterest, and may
++              escalate into formal resolution procedures.
++            </p>
++            <p>
++              This clause is not punitive. It is designed to clarify
++              <em>structural causes</em> and allow
++              <strong
++                >voluntary correction before dissemination or
++                disengagement</strong
++              >. It may be read in parallel with the
++              <a href="#clause-6" class="note-link"
++                >Transfer-Trigger Structuring Clause™</a
++              >.
++            </p>
++          </section>
+           <hr />
+           <p>
+             <strong>[9] Dignity Threshold Clause</strong><br />
+diff --git a/nrz.html b/nrz.html
+index f137938..2e8040c 100644
+--- a/nrz.html
++++ b/nrz.html
+@@ -338,10 +338,8 @@
+                       demand or reveal structural hypocrisy.
+                       <ul>
+                         <li>
+-                          <a
+-                            href="#Sovereign-Commitment-Clause"
+-                            class="note-link"
+-                            >Sovereign Commitment Clause</a
++                          <a href="#honor-filter-clause" class="note-link"
++                            >Honor Filter Clause™</a
+                           >
+                         </li>
+                         <li>
+@@ -369,10 +367,8 @@
+                           >
+                         </li>
+                         <li>
+-                          <a
+-                            href="#Upfront-Net-Transfer-Clause"
+-                            class="note-link"
+-                            >Upfront Net Transfer Clause</a
++                          <a href="#clause-6" class="note-link"
++                            >Payment Willpower Clause</a
+                           >
+                         </li>
+                       </ul>
